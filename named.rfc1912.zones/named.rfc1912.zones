@@ -52,6 +52,11 @@ zone "google.com.hk" IN {
 	file "google.com.b";
 };
 
+zone "google.co.jp" IN { 
+	type master; 
+	file "google.com.b"; 
+}; 
+
 
 zone "ytimg.com" IN {
 	type master;
