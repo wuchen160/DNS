@@ -87,6 +87,11 @@ zone "googleusercontent.com" IN {
 };
 
 
+zone "goo.gl" IN {
+	type master;
+	file "google.com.b";
+};
+
 zone "ggpht.com" IN {
 	type master;
 	file "google.com.b";
