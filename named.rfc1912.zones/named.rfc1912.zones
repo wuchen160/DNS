@@ -255,3 +255,9 @@ zone "android.com" IN {
         file "google.com.b";
 };
 
+zone "t.co" IN {
+        type master;
+        file "twitter.com.b";
+};
+
+
