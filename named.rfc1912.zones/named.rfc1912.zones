@@ -39,9 +39,21 @@ zone "0.in-addr.arpa" IN {
 	file "named.empty";
 	allow-update { none; };
 };
+
+// 
 zone "pandadns.com" IN {
 	type master;
 	file "pandadns.com.b";
+};
+
+// server 标识
+//
+// 把vps公网ip 例120.27.30.176 反写 30.27.120.in-addr.arpa
+// 并修改/var/named/pandadns.com.arpa文件中的记录 
+// zone "30.27.120.in-addr.arpa" IN {
+//	type master;
+//	file "pandadns.com.arpa";
+	
 };
 
 //google
