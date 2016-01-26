@@ -53,8 +53,7 @@ zone "pandadns.com" IN {
 // zone "30.27.120.in-addr.arpa" IN {
 //	type master;
 //	file "pandadns.com.arpa";
-	
-};
+// };
 
 //google
 
