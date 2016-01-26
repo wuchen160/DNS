@@ -7,3 +7,7 @@ $TTL 1D
 					3H )	; minimum
 @	IN	NS	ns1.pandadns.com.
 176	IN	PTR	ns1.pandadns.com.
+
+
+;把vps公网ip 例120.27.30.176 反写 30.27.120.in-addr.arpa
+;176则填入最后一行
