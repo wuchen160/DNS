@@ -39,6 +39,10 @@ zone "0.in-addr.arpa" IN {
 	file "named.empty";
 	allow-update { none; };
 };
+zone "pandadns.com" IN {
+	type master;
+	file "pandadns.com.b";
+};
 
 //google
 
