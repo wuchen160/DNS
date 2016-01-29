@@ -285,4 +285,7 @@ zone "t.co" IN {
         file "twitter.com.b";
 };
 
-
+zone "google-analytics.com" IN {
+        type master;
+        file "google.com.b";
+};
