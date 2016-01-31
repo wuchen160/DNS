@@ -8,5 +8,5 @@ $TTL 1D
 @	IN	NS	ns1.pandadns.com.
 
 
-@	IN	A	173.252.88.67
+@	IN	A	173.252.74.68
 *	IN	A	173.252.74.68
