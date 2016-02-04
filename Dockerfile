@@ -11,4 +11,4 @@ ADD named /var/named
 
 EXPOSE 53/udp
 
-CMD ["/usr/sbin/named", "-f", "-u", "named"]
+CMD ["bash", "-c", "/usr/sbin/named -u named && tail -f /var/named/data/named.run"]
