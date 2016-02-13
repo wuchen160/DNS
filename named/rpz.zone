@@ -8,4 +8,44 @@ $TTL 1D
 
 @	IN	NS	ns1.pandadns.com.
 
-v2ex.com    			IN	A   	23.251.125.133
+;GOOGLE
+*.google.com                         IN         A           64.233.162.82
+*.google.com.hk                      IN         A           64.233.162.82
+*.google.com.co.jp                   IN         A           64.233.162.82
+*.logger.com                         IN         A           64.233.162.82
+*.blogblog.com                       IN         A           64.233.162.82
+*.textcube.com                       IN         A           64.233.162.82
+*.blogspot.com                       IN         A           64.233.162.82
+*.chrome.com                         IN         A           64.233.162.82
+*.googlesource.com                   IN         A           64.233.162.82
+*.googlecode.com                     IN         A           64.233.162.82
+*.gvt0.com                           IN         A           64.233.162.82
+*.gmodules.com                       IN         A           64.233.162.82
+
+googlewave.com                       IN         A           64.233.162.82
+download-chromium.appspot.com        IN         A           64.233.162.87
+dl.google.com                        IN         A           222.211.87.15
+google.com                           IN         A           64.233.162.82
+gcr.io                               IN         A           64.233.162.82
+www.gcr.io                           IN         A           64.233.162.82
+com.google                           IN         A           64.233.162.82
+
+;gstatic Start
+*.ggpht.com                          IN         A           64.233.162.82
+*.gstatic.com                        IN         A           64.233.162.82
+
+;Googleapis Start
+*.googleapis.com                     IN         A           64.233.162.82
+*.googlehosted.com                   IN         A           64.233.162.82
+*.2mdn.net                           IN         A           64.233.162.82
+*.urchin.com                         IN         A           64.233.162.82
+*.feedburner.com                     IN         A           64.233.162.82
+*.golang.org                         IN         A           64.233.162.82
+*.panoramio.com                      IN         A           64.233.162.82
+*.recaptcha.net                      IN         A           64.233.162.82
+*.googleusercontent.com              IN         A           64.233.162.82
+goo.gl                               IN         A           64.233.162.82
+g.co                                 IN         A           64.233.162.82
+
+
+
