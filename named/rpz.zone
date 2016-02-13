@@ -1,0 +1,11 @@
+$TTL 1D
+@   IN  ns1.pandadns.com. root.pandadns.com. (
+            2015112401  ; serial
+            3H      ; refresh
+            15M     ; retry
+            1W      ; expiry
+            1D )        ; minimum
+
+@	IN	NS	ns1.pandadns.com.
+
+v2ex.com    			IN	A   	23.251.125.133
