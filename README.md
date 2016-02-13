@@ -1,51 +1,12 @@
-# DNS
-PandaDNS
-
-更好的上网。
-
+# PandaDNS
 Better Internet
 
-#原理（Principle）
+#Principle
+Access to blocked sites , DNS will return an access IP.
 
-访问某些被封锁的网站,DNS将返回一个可以访问的IP.
+#Installation
 
- Access to blocked sites , DNS will return an access IP.
-
-
-#优点
-较hosts来说,用户只要改个DNS即可省去频繁更新hosts文件的烦恼.
-
-#缺点
-1.信任问题,DNS服务器既可以返回正确的IP,也可以返回错误的IP,如恶意劫持域名,甚至利用DNS指向钓鱼网站.
-
-2.服务器必须位于国内,但是考虑到国内环境,如果DNS服务做的众人皆知,恐怕离查水表不远了,如HelloDNS.
-
-#那么...
-那么,希望通过本项目,建立一个又一个的DNS节点~~~~
-
-#PandaDNS环境
-centos6.7
-
-bind-9.8.2-0.37.rc1.el6_7.5.x86_64
-
-#快速搭建DNS（Installation ）
-1.yum install bind -y
-
-2.替换服务器目录文件 /etc/named.conf 为本项目 根目录的同名文件
-
-Replace the same file server directory file /etc/named.conf for the project root directory
-
-3.替换服务器目录文件 /etc/named.rfc1912.zones 为本项目 目录 named.rfc1912.zones 下 named.rfc1912.zones文件
-
-Replace the file server directory for the project directory named.rfc1912.zones /etc/named.rfc1912.zones inside named.rfc1912.zones file
-
-4.把本项目 目录 named 下所有文件上传至服务器目录 /var/named/ 下
-
-Under this item, the directory named all files uploaded to the server directory / var / named / under
-
-5.启动: service named start
-
-run: service named start
+updating....
 
 #DNS服务器安全(DNS server security)
 配置防火墙防止DDos攻击及放大攻击
