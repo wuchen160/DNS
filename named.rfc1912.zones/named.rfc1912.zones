@@ -57,6 +57,17 @@ zone "pandadns.com" IN {
 
 //google
 
+
+zone "gvt1.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "gvt2.com" IN {
+	type master;
+	file "google.com.b";
+};
+
 zone "google.com" IN {
 	type master;
 	file "google.com.b";
