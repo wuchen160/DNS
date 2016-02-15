@@ -1,12 +1,11 @@
-$TTL    86400                                                                    
-@       IN      SOA     apple.com. contact.fasterapple.com.  (
-                                           201404210 ; Serial           
-                                           28800      ; Refresh          
-                                           14400      ; Retry            
-                                           3600000    ; Expire           
-                                           86400 )    ; Minimum
-
-@	IN	NS	resolver2.fasterapple.com.
+$TTL 1D
+@	IN SOA	ns1.pandadns.com. root.pandadns.com. (
+					1996022534; serial
+					1024W	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@	IN	NS	ns1.pandadns.com.
 appldnld	IN	CNAME appldnld.apple.ccgslb.com.cn.
 $INCLUDE db/adcdownload	adcdownload.apple.com.
 configuration	IN	A	23.13.188.224
