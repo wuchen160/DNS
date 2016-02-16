@@ -11,292 +11,349 @@
 //
 
 zone "localhost.localdomain" IN {
-	type master;
-	file "named.localhost";
-	allow-update { none; };
+		type master;
+		file "named.localhost";
+		allow-update { none; };
 };
 
 zone "localhost" IN {
-	type master;
-	file "named.localhost";
-	allow-update { none; };
+		type master;
+		file "named.localhost";
+		allow-update { none; };
 };
 
 zone "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa" IN {
-	type master;
-	file "named.loopback";
-	allow-update { none; };
+		type master;
+		file "named.loopback";
+		allow-update { none; };
 };
 
 zone "1.0.0.127.in-addr.arpa" IN {
-	type master;
-	file "named.loopback";
-	allow-update { none; };
+		type master;
+		file "named.loopback";
+		allow-update { none; };
 };
 
 zone "0.in-addr.arpa" IN {
-	type master;
-	file "named.empty";
-	allow-update { none; };
+		type master;
+		file "named.empty";
+		allow-update { none; };
 };
-
-// 
 zone "pandadns.com" IN {
-	type master;
-	file "pandadns.com.b";
+		type master;
+		file "pandadns.com.b";
+	
 };
 
-// server 标识
-//
-// 把vps公网ip 例120.27.30.176 反写 30.27.120.in-addr.arpa
-// 并修改/var/named/pandadns.com.arpa文件中的记录 
-// zone "30.27.120.in-addr.arpa" IN {
-//	type master;
-//	file "pandadns.com.arpa";
-// };
+zone "30.27.120.in-addr.arpa" IN {
+		type master;
+		file "pandadns.com.arpa";
+	
+};
 
 //google
 
+zone "google.com" IN {
+		type master;	
+		file "google.com.b";
+};
 
 zone "gvt1.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
 zone "gvt2.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
-zone "google.com" IN {
-	type master;
-	file "google.com.b";
-};
 
 zone "google.com.hk" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
 zone "google.co.jp" IN { 
-	type master; 
-	file "google.com.b"; 
+		type master;	 
+		file "google.com.b"; 
 }; 
 
+zone "google-analytics.com" IN {
+        type master;	
+        file "google.com.b";
+};
 
 zone "ytimg.com" IN {
-	type master;
-	file "youtube.com.b";
+		type master;	
+		file "youtube.com.b";
 };
 
 zone "googlehosted.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
 zone "googlesyndication.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
+
 zone "googleapis.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 zone "googlelabs.com" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "google.com.b";
 };
 zone "gstatic.com" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "gstatic.com.b";
 };
 
 zone "googleusercontent.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
-
-zone "goo.gl" IN {
-	type master;
-	file "google.com.b";
-};
 
 zone "ggpht.com" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "google.com.b";
 };
 
 
 
 zone "googlevideo.com" IN {
-	type master;
-	file "youtube.com.b";
+		type master;
+		file "youtube.com.b";
 };
 
 zone "googleadsserving.cn" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "google.com.b";
 };
 
 
 zone "gstatic.cn" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.cn.b";
 };
 
 zone "googletagservices" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
 zone "google-analytics" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
 zone "doubleclick.net" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
 zone "googletagmanager.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
+};
+
+zone "goo.gl" IN {
+		type master;	
+		file "google.com.b";
 };
 
 zone "googlepages.com" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "google.com.b";
 };
 
 zone "toggleable.com" IN {
-	type master;
-	file "google.com.b";
+		type master;	
+		file "google.com.b";
 };
 
 zone "webrtc.org" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "google.com.b";
 };
 
 zone "withgoogle.com" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "google.com.b";
 };
 
 zone "googlezip.net" IN {
-	type master;
-	file "google.com.b";
+		type master;
+		file "google.com.b";
 };
+
 
 zone "polymer-project.org" IN {
-	type master;
-	file "google.com.b";
-};
-zone "wikipedia.org" IN {
-	type master;
-	file "wikipedia.org.b";
+		type master;
+		file "google.com.b";
+	
 };
 
-zone "blogger.com" IN {
-        type master;
-        file "google.com.b";
-};
-
-zone "dropbox.com" IN {
-        type master;
-        file "dropbox.com.b";
-};
-
-zone "onedrive.live.com" IN {
-        type master;
-        file "onedrive.live.com.b";
-};
-
-zone "twitter.com" IN {
-        type master;
-        file "twitter.com.b";
-};
-
-zone "twimg.com" IN {
-        type master;
-        file "twimg.com.b";
-};
-
-zone "tinypic.com" IN {
-        type master;
-        file "tinypic.com.b";
-};
-
-zone "sndcdn.com" IN {
-        type master;
-        file "sndcdn.com.b";
-};
-
-zone "soundcloud.com" IN {
-        type master;
-        file "soundcloud.com.b";
-};
-
-zone "instagram.com" IN {
-        type master;
-        file "instagram.com.b";
-};
-zone "akamaihd.net" IN {
-        type master;
-        file "akamaihd.net.b";
-};
-zone "cdninstagram.com" IN {
-        type master;
-        file "cdninstagram.com.b";
-};
-zone "facebook.com" IN {
-        type master;
-        file "facebook.com.b";
-};
-zone "fbcdn.net" IN {
-        type master;
-        file "fbcdn.net.b";
-};
-zone "messages-facebook.com" IN {
-        type master;
-        file "messages-facebook.com.b";
-};
-zone "facebook.net" IN {
-        type master;
-        file "facebook.net.b";
-};
-zone "google.cn" IN {
-        type master;
-        file "google.cn.b";
-};
-zone "youtube.com" IN {
-        type master;
-        file "youtube.com.b";
-};
-
-zone "youtube-nocookie.com" IN {
-        type master;
-        file "youtube.com.b";
-};
 zone "googletagservices.com" IN {
         type master;
         file "google.com.b";
+		
 };
 
 zone "android.com" IN {
         type master;
         file "google.com.b";
+		
+};
+
+zone "blogger.com" IN {
+        type master;
+        file "google.com.b";
+		
+};
+
+zone "google.cn" IN {
+        type master;
+        file "google.cn.b";
+		
+};
+
+
+//wikipedia.org
+zone "wikipedia.org" IN {
+		type master;
+		file "wikipedia.org.b";
+	
+};
+
+//dropbox.com
+zone "dropbox.com" IN {
+        type master;
+        file "dropbox.com.b";
+		
+};
+
+
+//twitter
+zone "twitter.com" IN {
+        type master;
+        file "twitter.com.b";
+		
+};
+
+zone "twimg.com" IN {
+        type master;
+        file "twimg.com.b";
+		
 };
 
 zone "t.co" IN {
-        type master;
-        file "twitter.com.b";
+        type master;		
+        file "t.co.b";
+		
 };
 
-zone "google-analytics.com" IN {
+zone "tinypic.com" IN {
         type master;
-        file "google.com.b";
+        file "tinypic.com.b";
+		
 };
+
+//soundcloud
+zone "sndcdn.com" IN {
+        type master;
+        file "sndcdn.com.b";
+		
+};
+
+zone "soundcloud.com" IN {
+        type master;
+        file "soundcloud.com.b";
+		
+};
+
+//instagram and facebook
+zone "instagram.com" IN {
+        type master;
+        file "instagram.com.b";
+		
+};
+zone "akamaihd.net" IN {
+        type master;
+        file "akamaihd.net.b";
+		
+};
+zone "cdninstagram.com" IN {
+        type master;
+        file "cdninstagram.com.b";
+		
+};
+zone "facebook.com" IN {
+        type master;
+        file "facebook.com.b";
+		
+};
+zone "fbcdn.net" IN {
+        type master;
+        file "fbcdn.net.b";
+		
+};
+zone "messages-facebook.com" IN {
+        type master;
+        file "messages-facebook.com.b";
+		
+};
+zone "facebook.net" IN {
+        type master;
+        file "facebook.net.b";
+		
+};
+
+		
+
+
+//youtube
+zone "youtube.com" IN {
+        type master;
+        file "youtube.com.b";
+		
+};
+
+zone "youtube-nocookie.com" IN {
+        type master;
+        file "youtube.com.b";
+		
+};
+
+
+//other
+zone "archive.org" IN {
+        type master;
+        file "archive.org.b";
+		
+};
+
+zone "gravatar.com" IN {
+        type master;
+        file "gravatar.com.b";
+		
+};
+
+zone "wp.com" IN {
+        type master;	
+        file "wp.com.b";
+		
+};
+
+
+zone "wordpress.com" IN {
+        type master;	
+        file "wordpress.com.b";
+		
+};
+
