@@ -8,5 +8,15 @@ $TTL 1D
 @	IN	NS	ns1.pandadns.com.
 
 
-@	IN	A	23.32.248.10
-*	IN	A	23.32.248.10
+@			IN	A	61.213.168.51
+igcdn-photos-a-a	IN	A	184.25.56.249
+igcdn-photos-b-a	IN	A	184.25.56.249
+igcdn-photos-c-a	IN	A	184.25.56.249
+igcdn-photos-d-a	IN	A	184.25.56.249
+igcdn-photos-e-a	IN	A	184.25.56.249
+igcdn-photos-f-a	IN	A	184.25.56.249
+igcdn-photos-g-a	IN	A	184.25.56.249
+igcdn-photos-h-a	IN	A	184.25.56.249
+
+
+*			IN	A	61.213.168.51
