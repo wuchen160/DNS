@@ -335,28 +335,5 @@ zone "youtube-nocookie.com" IN {
 
 
 //other
-zone "archive.org" IN {
-        type master;
-        file "archive.org.b";
-		
-};
 
-zone "gravatar.com" IN {
-        type master;
-        file "gravatar.com.b";
-		
-};
-
-zone "wp.com" IN {
-        type master;	
-        file "wp.com.b";
-		
-};
-
-
-zone "wordpress.com" IN {
-        type master;	
-        file "wordpress.com.b";
-		
-};
 
