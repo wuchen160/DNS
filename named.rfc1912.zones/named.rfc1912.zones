@@ -71,6 +71,10 @@ zone "gvt2.com" IN {
 		file "google.com.b";
 };
 
+zone "g.co" IN {
+		type master;	
+		file "google.com.b";
+};
 
 zone "google.com.hk" IN {
 		type master;	
