@@ -1,6 +1,14 @@
 # PandaDNS
 Better Internet
 
+#DEMO
+
+DNS1:182.254.158.191
+
+DNS2:120.27.30.176
+
+[more about](http://dns.pandadns.xyz/)
+
 #Principle
 Access to blocked sites , DNS will return an access IP.
 
