@@ -1,135 +1,113 @@
 $TTL 1D
 @	IN SOA	ns1.pandadns.com. root.pandadns.com. (
-            2015112401  ; serial
-            3H      ; refresh
-            15M     ; retry
-            1W      ; expiry
-            1D )        ; minimum
+									2015112401	; serial
+									3H		; refresh
+									15M		; retry
+									1W		; expiry
+									1D )		; minimum
 
 @	IN	NS	ns1.pandadns.com.
-
 ;GOOGLE
-*.google.com                         IN         A           64.233.162.82
-*.google.com.hk                      IN         A           64.233.162.82
-*.google.com.co.jp                   IN         A           64.233.162.82
-*.logger.com                         IN         A           64.233.162.82
-*.blogblog.com                       IN         A           64.233.162.82
-*.textcube.com                       IN         A           64.233.162.82
-*.blogspot.com                       IN         A           64.233.162.82
-*.chrome.com                         IN         A           64.233.162.82
-*.googlesource.com                   IN         A           64.233.162.82
-*.googlecode.com                     IN         A           64.233.162.82
-*.gvt0.com                           IN         A           64.233.162.82
-*.gmodules.com                       IN         A           64.233.162.82
+*.google.com						IN			A			64.233.162.82
+*.google.com.hk						IN			A			64.233.162.82
+*.google.com.co.jp					IN			A			64.233.162.82
+*.logger.com						IN			A			64.233.162.82
+*.blogblog.com						IN			A			64.233.162.82
+*.textcube.com						IN			A			64.233.162.82
+*.blogspot.com						IN			A			64.233.162.82
+*.chrome.com						IN			A			64.233.162.82
+*.googlesource.com					IN			A			64.233.162.82
+*.googlecode.com					IN			A			64.233.162.82
+*.gvt0.com							IN			A			64.233.162.82
+*.gmodules.com						IN			A			64.233.162.82
+googlewave.com						IN			A			64.233.162.82
+download-chromium.appspot.com		IN			A			64.233.162.87
+dl.google.com						IN			A			222.211.87.15
+google.com							IN			A			64.233.162.82
+gcr.io								IN			A			64.233.162.82
+www.gcr.io							IN			A			64.233.162.82
+com.google							IN			A			64.233.162.82
 
-googlewave.com                       IN         A           64.233.162.82
-download-chromium.appspot.com        IN         A           64.233.162.87
-dl.google.com                        IN         A           222.211.87.15
-google.com                           IN         A           64.233.162.82
-gcr.io                               IN         A           64.233.162.82
-www.gcr.io                           IN         A           64.233.162.82
-com.google                           IN         A           64.233.162.82
+;gstaticStart
+*.ggpht.com							IN			A			64.233.162.82
+*.gstatic.com						IN			A			64.233.162.82
+;GoogleapisStart
+*.googleapis.com					IN			A			64.233.162.82
+*.googlehosted.com					IN			A			64.233.162.82
+*.2mdn.net							IN			A			64.233.162.82
+*.urchin.com						IN			A			64.233.162.82
+*.feedburner.com					IN			A			64.233.162.82
+*.golang.org						IN			A			64.233.162.82
+*.panoramio.com						IN			A			64.233.162.82
+*.recaptcha.net						IN			A			64.233.162.82
+*.googleusercontent.com				IN			A			64.233.162.82
+goo.gl								IN			A			64.233.162.82
+g.co								IN			A			64.233.162.82
 
-
-;gstatic Start
-*.ggpht.com                          IN         A           64.233.162.82
-*.gstatic.com                        IN         A           64.233.162.82
-
-;Googleapis Start
-*.googleapis.com                     IN         A           64.233.162.82
-*.googlehosted.com                   IN         A           64.233.162.82
-*.2mdn.net                           IN         A           64.233.162.82
-*.urchin.com                         IN         A           64.233.162.82
-*.feedburner.com                     IN         A           64.233.162.82
-*.golang.org                         IN         A           64.233.162.82
-*.panoramio.com                      IN         A           64.233.162.82
-*.recaptcha.net                      IN         A           64.233.162.82
-*.googleusercontent.com              IN         A           64.233.162.82
-goo.gl                               IN         A           64.233.162.82
-g.co                                 IN         A           64.233.162.82
-
-
-;Google China
-translate.google.cn                  IN         A           203.208.43.112
-ditu.google.cn                       IN         A           203.208.43.113
-google.cn                            IN         A           203.208.43.114
-*.google.cn                          IN         A           203.208.40.146
-
+;GoogleChina
+translate.google.cn					IN			A			203.208.43.112
+ditu.google.cn						IN			A			203.208.43.113
+google.cn							IN			A			203.208.43.114
+*.google.cn							IN			A			203.208.40.146
 
 ;facebook
-messages-facebook.com				 IN  		A			173.252.89.136
-facebook.net						 IN			A 			182.239.95.136
-facebook.com						 IN 		A 			182.239.95.136
-fbcdn.net							 IN			A 			1.13.95.14
-
-*.messages-facebook.com				 IN			A			173.252.89.136
-*.facebook.net						 IN 		A 			182.239.95.136
-*.facebook.com						 IN 		A 			182.239.95.136
-*.fbcdn.net							 IN			A 			31.13.95.14
-
+messages-facebook.com				IN			A			173.252.89.136
+facebook.net						IN			A			182.239.95.136
+facebook.com						IN			A			182.239.95.136
+fbcdn.net							IN			A			1.13.95.14
+*.messages-facebook.com				IN			A			173.252.89.136
+*.facebook.net						IN			A			182.239.95.136
+*.facebook.com						IN			A			182.239.95.136
+*.fbcdn.net							IN			A			31.13.95.14
 
 ;instagram
-instagram.com						 IN			A			31.13.95.48
-cdninstagram.com					 IN			A			31.13.84.52
-
-*.instagram.com						 IN			A			31.13.95.48
-*.cdninstagram.com					 IN			A			31.13.84.52
-
+instagram.com						IN			A			31.13.95.48
+cdninstagram.com					IN			A			31.13.84.52
+*.instagram.com						IN			A			31.13.95.48
+*.cdninstagram.com					IN			A			31.13.84.52
 
 ;onedrive
-onedrive.live.com					 IN			A			204.79.197.217
-
-*.onedrive.live.com					 IN			A			204.79.197.217
-
+onedrive.live.com					IN			A			204.79.197.217
+*.onedrive.live.com					IN			A			204.79.197.217
 ;soundcloud
-sndcdn.com							 IN			A			68.232.44.96
-a-v2.sndcdn.com						 IN			A			68.232.44.96
-ec-media.sndcdn.com					 IN			A			68.232.45.77
-cf-media.sndcdn.com					 IN			A			54.192.127.227
-i1.sndcdn.com					     IN			A			68.232.44.96
-i2.sndcdn.com					     IN			A			68.232.44.96
-i3.sndcdn.com					     IN			A			68.232.44.96
-i4.sndcdn.com					     IN			A			54.192.138.234
-style.sndcdn.com				     IN			A			72.21.91.96
-va.sndcdn.com					     IN			A			72.21.91.96
-wis.sndcdn.com					     IN			A			72.21.91.96
-
-soundcloud.com						 IN			A			68.232.44.127
-a1.soundcloud.com					 IN			A			68.232.44.96
-api.soundcloud.com					 IN			A			68.232.44.127
-api-v2.soundcloud.com				 IN			A			68.232.44.127
-api-mobile.soundcloud.com		 	 IN			A			68.232.44.127
-api.soundcloud.com					 IN			A			68.232.44.127
-ec-media.soundcloud.com				 IN 		A			68.232.45.67
-ec-rtmp-media.soundcloud.com		 IN			A			68.232.46.220
-eventgateway.soundcloud.com			 IN			A			54.76.196.137
-eventlogger.soundcloud.com			 IN			A			54.76.196.137
-m.soundcloud.com					 IN			A			72.21.91.127
-promoted.soundcloud.com				 IN			A			68.232.44.127
-visuals.soundcloud.com				 IN			A			68.232.44.127
-
+sndcdn.com							IN			A			68.232.44.96
+a-v2.sndcdn.com						IN			A			68.232.44.96
+ec-media.sndcdn.com					IN			A			68.232.45.77
+cf-media.sndcdn.com					IN			A			54.192.127.227
+i1.sndcdn.com						IN			A			68.232.44.96
+i2.sndcdn.com						IN			A			68.232.44.96
+i3.sndcdn.com						IN			A			68.232.44.96
+i4.sndcdn.com						IN			A			54.192.138.234
+style.sndcdn.com					IN			A			72.21.91.96
+va.sndcdn.com						IN			A			72.21.91.96
+wis.sndcdn.com						IN			A			72.21.91.96
+soundcloud.com						IN			A			68.232.44.127
+a1.soundcloud.com					IN			A			68.232.44.96
+api.soundcloud.com					IN			A			68.232.44.127
+api-v2.soundcloud.com				IN			A			68.232.44.127
+api-mobile.soundcloud.com			IN			A			68.232.44.127
+api.soundcloud.com					IN			A			68.232.44.127
+ec-media.soundcloud.com				IN			A			68.232.45.67
+ec-rtmp-media.soundcloud.com		IN			A			68.232.46.220
+eventgateway.soundcloud.com			IN			A			54.76.196.137
+eventlogger.soundcloud.com			IN			A			54.76.196.137
+m.soundcloud.com					IN			A			72.21.91.127
+promoted.soundcloud.com				IN			A			68.232.44.127
+visuals.soundcloud.com				IN			A			68.232.44.127
 
 ;twitter
-t.co       							IN    	    A       	185.45.5.47
-*.t.co       						IN    		A       	185.45.5.47
-
+t.co								IN			A			185.45.5.47
+*.t.co								IN			A			185.45.5.47
 tinypic.com							IN			A			209.17.68.209
 *.tinypic.com						IN			A			209.17.68.209
-
 twimg.com							IN			A			185.45.5.41
 *.twimg.com							IN			A			185.45.5.41
-
 twitter.com							IN			A			104.244.42.195
 *.twitter.com						IN			A			104.244.42.195
-
-
-
 ;wikipedia
-	
 wikipedia.org						IN			A			198.35.26.96
-wikipedia.org						IN			A			208.80.154.53 
+wikipedia.org						IN			A			208.80.154.53
 *.wikipedia.org						IN			A			198.35.26.96
-
 
 ;akamaihd
 akamaihd.net						IN			A			61.213.168.51
@@ -142,7 +120,6 @@ igcdn-photos-f-a.akamaihd.net		IN			A			184.25.56.249
 igcdn-photos-g-a.akamaihd.net		IN			A			184.25.56.249
 igcdn-photos-h-a.akamaihd.net		IN			A			184.25.56.249
 *.akamaihd.net						IN			A			61.213.168.51
-
 
 ;dropbox
 dropbox.com							IN			A			108.160.172.238
