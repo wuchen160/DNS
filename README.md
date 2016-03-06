@@ -6,7 +6,7 @@ Access to blocked sites , DNS will return an access IP.
 
 #Installation
 
-git clone https://github.com/zyqf/DNS.git  && python DNS/install.py
+git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py
 
 #DNS服务器安全(DNS server security)
 配置防火墙防止DDos攻击及放大攻击
