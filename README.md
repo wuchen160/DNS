@@ -3,37 +3,28 @@ Better Internet
 
 #DEMO
 
-DNS1:182.254.158.191
+* DNS1:182.254.158.191
 
-DNS2:120.27.30.176
+* DNS2:120.27.30.176
 
 [more about](http://dns.pandadns.xyz/)
 
 #Principle
-Access to blocked sites , DNS will return an access IP.
+* Access to blocked sites , DNS will return an access IP.
 
 #Installation
 
-git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py
+* git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py
 
-#DNS服务器安全(DNS server security)
-配置防火墙防止DDos攻击及放大攻击
+#DNS server security
 
-添加规则：iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
+* add rule：iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
 
-添加规则：iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP
+* add rule：iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP
 
-说明：利用recent和state模块限制单IP在2s内只能与本机建立18个新连接。被限制一分钟后即可恢复访问
+* save rule：service iptables save
 
-保存规则：service iptables save
-
-参看规则是否生效：
-
-iptables -L -n
-
-重启iptables
-
-service iptables restart
+* restart iptables：service iptables restart
 
 
 
