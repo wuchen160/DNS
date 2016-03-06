@@ -26,6 +26,10 @@ $TTL 1D
 *.googlecode.com					IN A		64.233.162.82
 *.gvt0.com						IN A		64.233.162.82
 *.gmodules.com						IN A		64.233.162.82
+*.gvt1.com						IN A		64.233.162.82
+*.gvt2.com						IN A		64.233.162.82
+*.gvt3.com						IN A		64.233.162.82
+*.gvt4.com						IN A		64.233.162.82
 googlewave.com						IN A		64.233.162.82
 download-chromium.appspot.com				IN A		64.233.162.87
 dl.google.com						IN A		222.211.87.15
@@ -33,6 +37,13 @@ google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
 com.google						IN A		64.233.162.82
+
+
+;youtube
+*.ytimg.com						IN A		182.239.95.136
+*.youtube.com						IN A		182.239.95.136
+*.googlevideo.com					IN A		182.239.95.136
+
 
 ;gstaticStart
 *.ggpht.com						IN A		64.233.162.82
