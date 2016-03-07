@@ -24,6 +24,7 @@ $TTL 1D
 *.gvt2.com						IN A		64.233.162.82
 *.gvt3.com						IN A		64.233.162.82
 *.gvt4.com						IN A		64.233.162.82
+android.l.google.com					IN A		173.194.73.118
 googlewave.com						IN A		64.233.162.82
 download-chromium.appspot.com				IN A		64.233.162.87
 dl.google.com						IN A		222.211.87.15
@@ -141,3 +142,30 @@ dl-client3.dropbox.com					IN A		199.47.217.65
 client1.dropbox.com					IN A		199.47.217.65
 d.dropbox.com						IN A		108.160.172.193
 *.dropbox.com						IN A		108.160.172.238
+
+;xda
+cdn.www.xda-developers.com 				IN A 		68.232.44.229
+cdn.xda-developers.com 					IN A 		174.129.2.23
+cdn1.xda-developers.com 				IN A 		192.229.144.96
+cdn2.xda-developers.com 				IN A 		192.229.144.96
+cdn3.xda-developers.com 				IN A 		192.229.144.96
+cdn4.xda-developers.com 				IN A 		93.184.216.96
+cdn-img.xda-developers.com 				IN A 		192.229.144.96
+cdn-www.xda-developers.com 				IN A 		192.229.144.96
+cs261.wac.edgecastcdn.net 				IN A 		192.229.144.96
+forum.xda-developers.com 				IN A 		207.244.72.9
+m.servebom.com 						IN A 		23.32.241.66
+tags.bkrtx.com 						IN A 		117.18.237.203
+wac.8244.edgecastcdn.net 				IN A 		68.232.44.229
+www.xda-developers.com 					IN A 		207.244.73.44
+xda-developers.com 					IN A 		207.244.73.44
+
+;github
+gist.github.com						IN A		192.30.252.141
+github.com						IN A		192.30.252.131
+www.github.com 						IN A		192.30.252.131
+nodeload.github.com					IN A		192.30.252.144
+raw.github.com						IN A		103.245.222.133
+documentcloud.github.com				IN A		103.245.222.133
+developer.github.com					IN A		103.245.222.133
+api.github.com						IN A		192.30.252.126
