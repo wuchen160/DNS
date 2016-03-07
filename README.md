@@ -15,7 +15,7 @@ Better Internet
 #Installation
 * yum remove bind*
 
-* git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py
+* git clone https://github.com/zyqf/DNS.git  && cd DNS/bin && bash install_bind9.10.3.sh && cd .. && python move.py
 
 #DNS server security
 
