@@ -3,6 +3,7 @@ import os
 os.system('service named stop')
 os.system('cd bin')
 os.system('bash install_bind9.10.3.sh')
+os.system('cd ..')
 os.system('mv /etc/named.conf /etc/named.conf.bak')
 os.system('mv /etc/named.rfc1912.zones /etc/named.rfc1912.zones.bak')
 os.system('cp -f named.rfc1912.zones/named.rfc1912.zones /etc/named.rfc1912.zones')
