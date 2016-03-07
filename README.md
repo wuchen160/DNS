@@ -13,6 +13,7 @@ Better Internet
 * Access to blocked sites , DNS will return an access IP.
 
 #Installation
+* yum remove bind*
 
 * git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py
 
