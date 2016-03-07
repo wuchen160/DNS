@@ -6,8 +6,7 @@ wget https://bkraft.fr/files/RPM%20stuff/bind-9.10.3-P3.el6.x86_64/x86_64/bind-c
 wget https://bkraft.fr/files/RPM%20stuff/bind-9.10.3-P3.el6.x86_64/x86_64/bind-libs-9.10.3-3.el6.x86_64.rpm
 wget https://bkraft.fr/files/RPM%20stuff/bind-9.10.3-P3.el6.x86_64/x86_64/bind-utils-9.10.3-3.el6.x86_64.rpm
 
-rpm -ivh bind-9.10.3-3.el6.src.rpm
-rpm -ivh bind-license-9.10.3-3.el6.noarch.rpm
+
 rpm -ivh bind-libs-9.10.3-3.el6.x86_64.rpm
 rpm -ivh bind-utils-9.10.3-3.el6.x86_64.rpm
 rpm -ivh bind-9.10.3-3.el6.x86_64.rpm
