@@ -82,6 +82,7 @@ cdninstagram.com					IN A		31.13.84.52
 ;onedrive
 onedrive.live.com					IN A		204.79.197.217
 *.onedrive.live.com					IN A		204.79.197.217
+
 ;soundcloud
 sndcdn.com						IN A		68.232.44.96
 a-v2.sndcdn.com						IN A		68.232.44.96
