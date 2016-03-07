@@ -19,6 +19,12 @@ Better Internet
 
 python /root/DNS/bin/update.py
 
+or
+
+crontab -e
+
+00 02 * * * python /root/DNS/bin/update.py
+
 #DNS server security
 
 * add rule：iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
