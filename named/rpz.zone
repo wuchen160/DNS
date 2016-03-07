@@ -1,9 +1,3 @@
-;thanks list
-;@zyqf
-;@HuanMeng0
-;@codexss
-;@tonyxue
-
 $TTL 1D
 @	IN SOA	ns1.pandadns.com. root.pandadns.com. (
 									2015112401	; serial
