@@ -1,3 +1,4 @@
+rpm --import http://bkraft.fr/files/RPM%20stuff/RPM-GPG-KEY-benjaminkraft
 wget https://bkraft.fr/files/RPM%20stuff/bind-9.10.3-P3.el6.x86_64/noarch/bind-9.10.3-3.el6.src.rpm
 wget https://bkraft.fr/files/RPM%20stuff/bind-9.10.3-P3.el6.x86_64/noarch/bind-license-9.10.3-3.el6.noarch.rpm
 wget https://bkraft.fr/files/RPM%20stuff/bind-9.10.3-P3.el6.x86_64/x86_64/bind-9.10.3-3.el6.x86_64.rpm
