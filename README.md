@@ -1,3 +1,6 @@
+此分支暂时有问题，rpm安装提示依赖问题。
+近日将重写代码，进行编译式安装。
+
 # PandaDNS
 Better Internet
 
