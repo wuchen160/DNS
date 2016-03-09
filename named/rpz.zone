@@ -178,3 +178,24 @@ m.box.com 	                                        IN A            74.112.184.85
 support.box.com                                         IN A            104.218.203.34
 www.box.com                                             IN A            74.112.184.85	
 www.box.net                                             IN A            74.112.184.80
+
+;apple
+play.itunes.apple.com					IN A            222.211.64.122
+upp.itunes.apple.com					IN A            222.211.64.122
+client-api.itunes.apple.com				IN A            222.211.64.122
+su.itunes.apple.com					IN A            222.211.64.122
+se.itunes.apple.com					IN A            222.211.64.122
+
+init.itunes.apple.com					IN A		23.198.133.66
+itunes.apple.com					IN A		23.198.133.66
+
+;search.itunes.apple.com				IN A		23.50.17.214
+		
+radio.itunes.apple.com					IN A		23.13.185.169
+radio-services.itunes.apple.com				IN A		23.13.185.169
+radio-activity.itunes.apple.com				IN A		23.13.185.169
+
+streamingaudio.itunes.apple.com				IN A		182.140.218.60
+aod.itunes.apple.com					IN A		182.140.218.60
+iosapps.itunes.apple.com				IN A		182.140.218.60
+osxapps.itunes.apple.com				IN A		182.140.218.60
