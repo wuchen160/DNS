@@ -15,7 +15,7 @@ Better Internet
 #Installation
 * yum remove bind*
 * cd /root
-* git clone https://github.com/zyqf/DNS.git  && cd DNS/bin && bash install_bind9.10.3.sh
+* git clone https://github.com/zyqf/DNS.git  && cd DNS && bash install.sh
 *  cd .. && python move.py
 
 #Update rpz.zone
