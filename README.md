@@ -13,10 +13,8 @@ Better Internet
 [more about](http://dns.pandadns.xyz/)
 
 #Installation
-* yum remove bind*
 * cd /root
 * git clone https://github.com/zyqf/DNS.git  && cd DNS && bash install.sh
-*  cd .. && python move.py
 
 #Update rpz.zone
 
