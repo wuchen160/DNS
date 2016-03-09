@@ -17,13 +17,13 @@ Better Internet
 
 #Update rpz.zone
 
-python /root/DNS/bin/update.py
+* python /root/DNS/bin/update.py
 
 or
 
-crontab -e
+* crontab -e
 
-00 02 * * * python /root/DNS/bin/update.py
+* 00 02 * * * python /root/DNS/bin/update.py
 
 #DNS server security
 
