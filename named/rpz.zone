@@ -8,10 +8,11 @@ $TTL 1D
 
 @	IN	NS	ns1.pandadns.com.
 ;GOOGLE
-android.l.google.com					IN A		173.194.73.118
+android.l.google.com					IN A		172.217.0.14
+android.clients.google.com				IN A		172.217.0.14
 googlewave.com						IN A		64.233.162.82
 download-chromium.appspot.com				IN A		64.233.162.87
-dl.google.com						IN A		222.211.87.15
+dl.google.com						IN A		172.217.0.14
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
