@@ -25,10 +25,9 @@ old = CalcMD5("/var/named/rpz.zone")
 new = CalcMD5("rpz.zone.nwe")
 
 if old == new:
-	print('nothin can update')
+	print('nothing can update')
 
 else:
-	os.system('')	
 	os.system('mv /var/named/rpz.zone /var/named/rpz.zone.bak')
 	os.system('mv rpz.zone.nwe /var/named/rpz.zone')
 	os.system('service named restart')	
