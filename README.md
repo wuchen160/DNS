@@ -13,27 +13,27 @@ Better Internet
 
 #Installation
 
-* git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py
+* `git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
 
 #Update rpz.zone
 
-* python /root/DNS/bin/update.py
+* `python /root/DNS/bin/update.py`
 
 or
 
-* crontab -e
+* `crontab -e`
 
 * 00 02 * * * python /root/DNS/bin/update.py
 
 #DNS server security
 
-* add rule：iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
+* add rule：`iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit`
 
-* add rule：iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP
+* add rule：`iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP`
 
-* save rule：service iptables save
+* save rule：`service iptables save`
 
-* restart iptables：service iptables restart
+* restart `iptables：service iptables restart`
 
 
 
