@@ -1,4 +1,5 @@
-近期将更新编译安装bind9.10.3.p3的脚本，勿运行/bin/ 下的安装脚本。
+此分支暂时有问题，rpm安装提示依赖问题。
+近日将重写代码，进行编译式安装。
 
 # PandaDNS
 Better Internet
@@ -12,8 +13,10 @@ Better Internet
 [more about](http://dns.pandadns.xyz/)
 
 #Installation
-
-* git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py
+* yum remove bind*
+* cd /root
+* git clone https://github.com/zyqf/DNS.git  && cd DNS/bin && bash install_bind9.10.3.sh
+*  cd .. && python move.py
 
 #Update rpz.zone
 

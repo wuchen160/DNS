@@ -8,11 +8,10 @@ $TTL 1D
 
 @	IN	NS	ns1.pandadns.com.
 ;GOOGLE
-android.l.google.com					IN A		172.217.0.14
-android.clients.google.com				IN A		172.217.0.14
+android.l.google.com					IN A		173.194.73.118
 googlewave.com						IN A		64.233.162.82
 download-chromium.appspot.com				IN A		64.233.162.87
-dl.google.com						IN A		172.217.0.14
+dl.google.com						IN A		222.211.87.15
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
@@ -138,13 +137,12 @@ igcdn-photos-h-a.akamaihd.net				IN A		184.25.56.249
 *.akamaihd.net						IN A		61.213.168.51
 
 ;dropbox
-dropbox.com						IN A		205.251.194.52
-www.dropbox.com						IN A		205.251.195.5
-forums.dropbox.com					IN A		54.192.72.89
-dl-client3.dropbox.com					IN A		205.251.195.5
-client1.dropbox.com					IN A		205.251.195.5
-d.dropbox.com						IN A		192.33.14.30
-;*.dropbox.com						IN A		108.160.172.238
+dropbox.com						IN A		108.160.172.238
+www.dropbox.com						IN A		108.160.172.238
+dl-client3.dropbox.com					IN A		199.47.217.65
+client1.dropbox.com					IN A		199.47.217.65
+d.dropbox.com						IN A		108.160.172.193
+*.dropbox.com						IN A		108.160.172.238
 
 ;xda
 cdn.www.xda-developers.com 				IN A 		68.232.44.229
@@ -172,32 +170,3 @@ raw.github.com						IN A		103.245.222.133
 documentcloud.github.com				IN A		103.245.222.133
 developer.github.com					IN A		103.245.222.133
 api.github.com						IN A		192.30.252.126
-
-;Box.com
-app.box.com						IN A            74.112.184.70
-box.com                                                 IN A            74.112.184.90
-m.box.com 	                                        IN A            74.112.184.85
-support.box.com                                         IN A            104.218.203.34
-www.box.com                                             IN A            74.112.184.85	
-www.box.net                                             IN A            74.112.184.80
-
-;apple
-play.itunes.apple.com					IN A            222.211.64.122
-upp.itunes.apple.com					IN A            222.211.64.122
-client-api.itunes.apple.com				IN A            222.211.64.122
-su.itunes.apple.com					IN A            222.211.64.122
-se.itunes.apple.com					IN A            222.211.64.122
-
-init.itunes.apple.com					IN A		23.198.133.66
-itunes.apple.com					IN A		23.198.133.66
-
-;search.itunes.apple.com				IN A		23.50.17.214
-		
-radio.itunes.apple.com					IN A		23.13.185.169
-radio-services.itunes.apple.com				IN A		23.13.185.169
-radio-activity.itunes.apple.com				IN A		23.13.185.169
-
-streamingaudio.itunes.apple.com				IN A		182.140.218.60
-aod.itunes.apple.com					IN A		182.140.218.60
-iosapps.itunes.apple.com				IN A		182.140.218.60
-osxapps.itunes.apple.com				IN A		182.140.218.60
