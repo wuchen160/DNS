@@ -170,3 +170,11 @@ raw.github.com						IN A		103.245.222.133
 documentcloud.github.com				IN A		103.245.222.133
 developer.github.com					IN A		103.245.222.133
 api.github.com						IN A		192.30.252.126
+
+;Box.com
+app.box.com						IN A            74.112.184.70
+box.com                                                 IN A            74.112.184.90
+m.box.com 	                                        IN A            74.112.184.85
+support.box.com                                         IN A            104.218.203.34
+www.box.com                                             IN A            74.112.184.85	
+www.box.net                                             IN A            74.112.184.80
