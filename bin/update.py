@@ -25,7 +25,7 @@ old = CalcMD5("/var/named/rpz.zone")
 new = CalcMD5("rpz.zone.nwe")
 
 if old == new:
-	print('nothin can update')
+	print('nothing can update')
 
 else:
 	os.system('')	
