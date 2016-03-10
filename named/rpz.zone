@@ -12,7 +12,7 @@ android.l.google.com					IN A		172.217.0.14
 android.clients.google.com				IN A		172.217.0.14
 googlewave.com						IN A		64.233.162.82
 download-chromium.appspot.com				IN A		64.233.162.87
-dl.google.com						IN A		172.217.0.14
+dl.google.com						IN A		203.208.43.105
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
