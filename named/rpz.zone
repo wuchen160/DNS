@@ -207,3 +207,18 @@ osxapps.itunes.apple.com				IN A		182.140.218.60
 s.gravatar.com						IN A		68.232.44.121
 1.gravatar.com						IN A		68.232.44.121
 2.gravatar.com						IN A		68.232.44.121
+
+;steam
+
+cdn.steamcommunity.com					IN A		203.116.74.210
+cdn.steampowered.com					IN A		203.116.74.210
+cdn.store.steampowered.com				IN A		203.116.74.210
+media.steampowered.com					IN A		203.116.74.210
+cloud.steampowered.com					IN A		203.116.74.210
+storefront.steampowered.com				IN A		203.116.74.210
+cdn.akamai.steamstatic.com				IN A		203.116.74.210
+steamcommunity-a.akamaihd.net				IN A		203.116.74.210
+cdn.mileweb.cs.steampowered.com.8686c.com		IN A		203.116.74.210
+
+;origin
+origin-a.akamaihd.net					IN A		58.240.53.194
