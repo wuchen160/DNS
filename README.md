@@ -11,11 +11,14 @@ Better Internet
 
 [more about](http://dns.pandadns.xyz/)
 
-#Installation
-
+#INSTALLATION
+### NOTE  
+* Your VPS must be in China
+* Only support Centos 6.X
+### RUN
 * `git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
 
-#Update rpz.zone
+#UPDATE rpz.zone flie
 
 * `python /root/DNS/bin/update.py`
 
@@ -25,7 +28,7 @@ or
 
 * 00 02 * * * python /root/DNS/bin/update.py
 
-#DNS server security
+#DNS SERVER SECURITY
 
 * add rule：`iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit`
 
