@@ -222,3 +222,7 @@ cdn.mileweb.cs.steampowered.com.8686c.com		IN A		203.116.74.210
 
 ;origin
 origin-a.akamaihd.net					IN A		58.240.53.194
+
+;mega
+mega.nz							IN A		154.53.224.166					
+g.cdn1.mega.co.nz					IN A		117.18.237.188
