@@ -15,6 +15,7 @@ Better Internet
 ### NOTE  
 * Your VPS must be in China
 * Only support Centos 6.X
+
 ### RUN
 * `git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
 
