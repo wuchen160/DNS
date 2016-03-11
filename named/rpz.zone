@@ -8,8 +8,10 @@ $TTL 1D
 
 @	IN	NS	ns1.pandadns.com.
 ;GOOGLE
-android.l.google.com					IN A		172.217.0.14
-android.clients.google.com				IN A		172.217.0.14
+android.l.google.com					IN A		64.233.162.85
+android.clients.google.com				IN A		64.233.162.85
+mtalk.google.com					IN A		64.233.188.188
+abc.xyz							IN A		64.233.162.85
 googlewave.com						IN A		64.233.162.82
 download-chromium.appspot.com				IN A		64.233.162.87
 dl.google.com						IN A		64.233.162.82
@@ -27,12 +29,12 @@ com.google						IN A		64.233.162.82
 *.chrome.com						IN A		64.233.162.82
 *.googlesource.com					IN A		64.233.162.82
 *.googlecode.com					IN A		64.233.162.82
-*.gvt0.com						IN A		64.233.162.82
 *.gmodules.com						IN A		64.233.162.82
-*.gvt1.com						IN A		64.233.162.82
-*.gvt2.com						IN A		64.233.162.82
-*.gvt3.com						IN A		64.233.162.82
-*.gvt4.com						IN A		64.233.162.82
+
+*.gvt0.com						IN A		182.239.95.136
+*.gvt1.com						IN A		182.239.95.136
+*.gvt2.com						IN A		182.239.95.136
+*.gvt3.com						IN A		182.239.95.136
 
 ;youtube
 *.ytimg.com						IN A		182.239.95.136
