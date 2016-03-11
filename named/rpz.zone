@@ -7,6 +7,10 @@ $TTL 1D
 									1D )		; minimum
 
 @	IN	NS	ns1.pandadns.com.
+;identity authentication		
+*.id.pandadns						IN CNAME	from.github.pandadns
+from.github.pandadns					IN A		52.94.41.38
+
 ;GOOGLE
 android.l.google.com					IN A		64.233.162.85
 android.clients.google.com				IN A		64.233.162.85
