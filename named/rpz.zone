@@ -47,6 +47,7 @@ com.google						IN A		64.233.162.82
 ;GoogleapisStart
 goo.gl							IN A		64.233.162.82
 g.co							IN A		64.233.162.82
+app.simplenote.com					IN A		72.14.246.169
 *.googleapis.com					IN A		64.233.162.82
 *.googlehosted.com					IN A		64.233.162.82
 *.2mdn.net						IN A		64.233.162.82
