@@ -183,20 +183,20 @@ www.box.com                                             IN A            74.112.1
 www.box.net                                             IN A            74.112.184.80
 
 ;apple
-play.itunes.apple.com					IN A            222.211.64.122
-upp.itunes.apple.com					IN A            222.211.64.122
-client-api.itunes.apple.com				IN A            222.211.64.122
-su.itunes.apple.com					IN A            222.211.64.122
-se.itunes.apple.com					IN A            222.211.64.122
+play.itunes.apple.com					IN A            118.215.176.66
+upp.itunes.apple.com					IN A            118.215.176.66
+client-api.itunes.apple.com				IN A            118.215.176.66
+su.itunes.apple.com					IN A            23.34.98.202
+se.itunes.apple.com					IN A            23.34.98.202
 
-init.itunes.apple.com					IN A		23.198.133.66
-itunes.apple.com					IN A		23.198.133.66
+init.itunes.apple.com					IN A		118.215.176.66
+itunes.apple.com					IN A		118.215.176.66
 
-;search.itunes.apple.com				IN A		23.50.17.214
+search.itunes.apple.com					IN A		118.215.176.66
 		
-radio.itunes.apple.com					IN A		23.13.185.169
-radio-services.itunes.apple.com				IN A		23.13.185.169
-radio-activity.itunes.apple.com				IN A		23.13.185.169
+radio.itunes.apple.com					IN A		23.42.69.185
+radio-services.itunes.apple.com				IN A		23.42.69.185
+radio-activity.itunes.apple.com				IN A		23.42.69.185
 
 streamingaudio.itunes.apple.com				IN A		58.50.31.35
 aod.itunes.apple.com					IN A		58.50.31.35
@@ -210,14 +210,13 @@ s.gravatar.com						IN A		68.232.44.121
 
 ;steam
 
-cdn.steamcommunity.com					IN A		203.116.74.210
-cdn.steampowered.com					IN A		203.116.74.210
-cdn.store.steampowered.com				IN A		203.116.74.210
-media.steampowered.com					IN A		203.116.74.210
-cloud.steampowered.com					IN A		203.116.74.210
+cdn.steamcommunity.com					IN A		125.56.201.187
+cdn.steampowered.com					IN A		125.56.201.187
+cdn.store.steampowered.com				IN A		61.244.242.24
+media.steampowered.com					IN A		65.200.22.145
 storefront.steampowered.com				IN A		203.116.74.210
-cdn.akamai.steamstatic.com				IN A		203.116.74.210
-steamcommunity-a.akamaihd.net				IN A		203.116.74.210
+cdn.akamai.steamstatic.com				IN A		42.99.128.137
+steamcommunity-a.akamaihd.net				IN A		61.213.168.19
 cdn.mileweb.cs.steampowered.com.8686c.com		IN A		203.116.74.210
 
 ;origin
