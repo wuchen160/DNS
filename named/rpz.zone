@@ -198,10 +198,10 @@ radio.itunes.apple.com					IN A		23.13.185.169
 radio-services.itunes.apple.com				IN A		23.13.185.169
 radio-activity.itunes.apple.com				IN A		23.13.185.169
 
-streamingaudio.itunes.apple.com				IN A		182.140.218.60
-aod.itunes.apple.com					IN A		182.140.218.60
-iosapps.itunes.apple.com				IN A		182.140.218.60
-osxapps.itunes.apple.com				IN A		182.140.218.60
+streamingaudio.itunes.apple.com				IN A		58.50.31.35
+aod.itunes.apple.com					IN A		58.50.31.35
+iosapps.itunes.apple.com				IN A		58.50.31.35
+osxapps.itunes.apple.com				IN A		58.50.31.35
 
 ;wordpress
 s.gravatar.com						IN A		68.232.44.121
