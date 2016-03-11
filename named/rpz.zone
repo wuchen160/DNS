@@ -19,8 +19,7 @@ mtalk.google.com					IN A		64.233.188.188
 abc.xyz							IN A		64.233.162.85
 googlewave.com						IN A		64.233.162.82
 download-chromium.appspot.com				IN A		64.233.162.87
-;dl.google.com						IN A		64.233.162.82
-dl.google.com						IN A		203.208.41.144
+dl.google.com						IN A		64.233.162.82
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
@@ -56,8 +55,7 @@ com.google						IN A		64.233.162.82
 goo.gl							IN A		64.233.162.82
 g.co							IN A		64.233.162.82
 app.simplenote.com					IN A		72.14.246.169
-;*.googleapis.com					IN A		64.233.162.82
-*.googleapis.com					IN A		203.208.41.144
+*.googleapis.com					IN A		64.233.162.82
 *.googlehosted.com					IN A		64.233.162.82
 *.2mdn.net						IN A		64.233.162.82
 *.urchin.com						IN A		64.233.162.82
