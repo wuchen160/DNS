@@ -213,11 +213,9 @@ s.gravatar.com						IN A		68.232.44.121
 cdn.steamcommunity.com					IN A		125.56.201.187
 cdn.steampowered.com					IN A		125.56.201.187
 cdn.store.steampowered.com				IN A		61.244.242.24
-media.steampowered.com					IN A		65.200.22.145
 storefront.steampowered.com				IN A		203.116.74.210
 cdn.akamai.steamstatic.com				IN A		42.99.128.137
 steamcommunity-a.akamaihd.net				IN A		61.213.168.19
-cdn.mileweb.cs.steampowered.com.8686c.com		IN A		203.116.74.210
 
 ;origin
 origin-a.akamaihd.net					IN A		58.240.53.194
