@@ -202,3 +202,6 @@ streamingaudio.itunes.apple.com				IN A		182.140.218.60
 aod.itunes.apple.com					IN A		182.140.218.60
 iosapps.itunes.apple.com				IN A		182.140.218.60
 osxapps.itunes.apple.com				IN A		182.140.218.60
+
+;wordpress
+2.gravatar.com						IN A		68.232.44.121
