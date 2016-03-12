@@ -80,7 +80,7 @@ fbcdn.net						IN A		31.13.95.14
 *.messages-facebook.com					IN A		173.252.89.136
 *.facebook.net						IN A		182.239.95.136
 *.facebook.com						IN A		182.239.95.136
-*.fbcdn.net						IN A		31.13.95.14
+*.fbcdn.net 						IN A		31.13.95.14
 
 ;instagram
 instagram.com						IN A		31.13.95.48
