@@ -294,3 +294,9 @@ ac.duckduckgo.com                                       IN A            46.51.21
 icons.duckduckgo.com                                    IN A            54.251.178.52
 images.duckduckgo.com                                   IN A            54.251.178.52
 help.duckduckgo.com                                     IN A            96.45.83.209
+
+;Imgur
+imgur.com                                               IN A            103.245.222.193
+www.imgur.com                                           IN A            103.245.222.193
+i.imgur.com                                             IN A            103.245.222.193
+s.imgur.com                                             IN A            103.245.222.193
