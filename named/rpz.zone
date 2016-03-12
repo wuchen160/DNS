@@ -18,12 +18,12 @@ android.clients.google.com				IN A		64.233.162.85
 mtalk.google.com					IN A		64.233.188.188
 abc.xyz							IN A		64.233.162.85
 googlewave.com						IN A		64.233.162.82
-download-chromium.appspot.com				IN A		64.233.162.87
 dl.google.com						IN A		64.233.162.82
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
 com.google						IN A		64.233.162.82
+*.appspot.com						IN A		64.233.162.87
 *.google.com						IN A		64.233.162.82
 *.google.com.hk						IN A		64.233.162.82
 *.google.com.co.jp					IN A		64.233.162.82
