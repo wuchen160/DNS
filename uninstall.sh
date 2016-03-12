@@ -26,8 +26,6 @@ function Finish()
 echo '|-------------------COMPLETE-----------------------|' ;
 echo '|      The script was finish.Please Check!         |' ;
 echo '|   PandaDNS Project : https://github.com/zyqf/DNS |' ;
-echo '|--------------------THANKS------------------------|' ;
-echo '| @HuanMeng0 @codexss @tonyxue                     |' ;
 echo '|-------------------GOODBYE!-----------------------|' ;
 }
 

@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import hashlib
 import os,sys
  
@@ -28,8 +29,9 @@ if old == new:
 	print('nothing can update')
 
 else:
+	os.system('')	
 	os.system('mv /var/named/rpz.zone /var/named/rpz.zone.bak')
 	os.system('mv rpz.zone.nwe /var/named/rpz.zone')
-	os.system('service named restart')	
+	os.system('rndc reload')	
 	print('update have done,thanks!')
 

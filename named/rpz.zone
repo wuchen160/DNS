@@ -7,15 +7,23 @@ $TTL 1D
 									1D )		; minimum
 
 @	IN	NS	ns1.pandadns.com.
+;identity authentication
+id.pandadns						IN CNAME	from.github.pandadns.
+*.id.pandadns						IN CNAME	from.github.pandadns.
+from.github.pandadns					IN A		52.94.41.38
+
 ;GOOGLE
-android.l.google.com					IN A		173.194.73.118
+android.l.google.com					IN A		64.233.162.85
+android.clients.google.com				IN A		64.233.162.85
+mtalk.google.com					IN A		64.233.188.188
+abc.xyz							IN A		64.233.162.85
 googlewave.com						IN A		64.233.162.82
-download-chromium.appspot.com				IN A		64.233.162.87
-dl.google.com						IN A		222.211.87.15
+dl.google.com						IN A		64.233.162.82
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
 com.google						IN A		64.233.162.82
+*.appspot.com						IN A		64.233.162.87
 *.google.com						IN A		64.233.162.82
 *.google.com.hk						IN A		64.233.162.82
 *.google.com.co.jp					IN A		64.233.162.82
@@ -26,12 +34,12 @@ com.google						IN A		64.233.162.82
 *.chrome.com						IN A		64.233.162.82
 *.googlesource.com					IN A		64.233.162.82
 *.googlecode.com					IN A		64.233.162.82
-*.gvt0.com						IN A		64.233.162.82
 *.gmodules.com						IN A		64.233.162.82
-*.gvt1.com						IN A		64.233.162.82
-*.gvt2.com						IN A		64.233.162.82
-*.gvt3.com						IN A		64.233.162.82
-*.gvt4.com						IN A		64.233.162.82
+
+*.gvt0.com						IN A		182.239.95.136
+*.gvt1.com						IN A		182.239.95.136
+*.gvt2.com						IN A		182.239.95.136
+*.gvt3.com						IN A		182.239.95.136
 
 ;youtube
 *.ytimg.com						IN A		182.239.95.136
@@ -46,6 +54,7 @@ com.google						IN A		64.233.162.82
 ;GoogleapisStart
 goo.gl							IN A		64.233.162.82
 g.co							IN A		64.233.162.82
+app.simplenote.com					IN A		72.14.246.169
 *.googleapis.com					IN A		64.233.162.82
 *.googlehosted.com					IN A		64.233.162.82
 *.2mdn.net						IN A		64.233.162.82
@@ -137,12 +146,13 @@ igcdn-photos-h-a.akamaihd.net				IN A		184.25.56.249
 *.akamaihd.net						IN A		61.213.168.51
 
 ;dropbox
-dropbox.com						IN A		108.160.172.238
-www.dropbox.com						IN A		108.160.172.238
-dl-client3.dropbox.com					IN A		199.47.217.65
-client1.dropbox.com					IN A		199.47.217.65
-d.dropbox.com						IN A		108.160.172.193
-*.dropbox.com						IN A		108.160.172.238
+dropbox.com						IN A		205.251.194.52
+www.dropbox.com						IN A		205.251.195.5
+forums.dropbox.com					IN A		54.192.72.89
+dl-client3.dropbox.com					IN A		205.251.195.5
+client1.dropbox.com					IN A		205.251.195.5
+d.dropbox.com						IN A		192.33.14.30
+;*.dropbox.com						IN A		108.160.172.238
 
 ;xda
 cdn.www.xda-developers.com 				IN A 		68.232.44.229
@@ -170,3 +180,117 @@ raw.github.com						IN A		103.245.222.133
 documentcloud.github.com				IN A		103.245.222.133
 developer.github.com					IN A		103.245.222.133
 api.github.com						IN A		192.30.252.126
+
+;Box.com
+app.box.com						IN A            74.112.184.70
+box.com                                                 IN A            74.112.184.90
+m.box.com 	                                        IN A            74.112.184.85
+support.box.com                                         IN A            104.218.203.34
+www.box.com                                             IN A            74.112.184.85	
+www.box.net                                             IN A            74.112.184.80
+
+;apple
+play.itunes.apple.com					IN A            118.215.176.66
+upp.itunes.apple.com					IN A            118.215.176.66
+client-api.itunes.apple.com				IN A            118.215.176.66
+su.itunes.apple.com					IN A            23.34.98.202
+se.itunes.apple.com					IN A            23.34.98.202
+
+init.itunes.apple.com					IN A		118.215.176.66
+itunes.apple.com					IN A		118.215.176.66
+
+search.itunes.apple.com					IN A		118.215.176.66
+		
+radio.itunes.apple.com					IN A		23.42.69.185
+radio-services.itunes.apple.com				IN A		23.42.69.185
+radio-activity.itunes.apple.com				IN A		23.42.69.185
+
+streamingaudio.itunes.apple.com				IN A		58.50.31.35
+aod.itunes.apple.com					IN A		58.50.31.35
+iosapps.itunes.apple.com				IN A		58.50.31.35
+osxapps.itunes.apple.com				IN A		58.50.31.35
+
+;wordpress
+s.gravatar.com						IN A		68.232.44.121
+1.gravatar.com						IN A		68.232.44.121
+2.gravatar.com						IN A		68.232.44.121
+lb.gravatar.com 			                IN A		192.0.80.242
+secure.gravatar.com			                IN A		192.0.80.242
+botd2.wordpress.com			                IN A		192.0.81.250
+r-login.wordpress.com      		                IN A 		192.0.81.250
+s.stats.wordpress.com      		                IN A 		68.232.44.119
+s3.wordpress.com 	        		        IN A 		68.232.44.111
+wordpress.com 	        		                IN A 		66.155.11.243
+s1.wordpress.com 	        		        IN A		68.232.44.111
+s2.wordpress.com 	        		        IN A 		68.232.44.111
+s.wordpress.com	        		                IN A		68.232.44.111
+lb.wordpress.com	     		                IN A 		66.155.9.238
+wpcom.wordpress.com	        		        IN A 		66.155.9.238
+zh.wordpress.com 	        		        IN A 		66.155.9.238
+zh-cn.wordpress.com	        		        IN A 		66.155.9.238
+zh-sg.wordpress.com 	        		        IN A 		66.155.9.238
+lucifr.wordpress.com      		                IN A 		66.155.9.238
+dashboard.wordpress.com 			        IN A		66.155.9.238
+en.blog.wordpress.com 			                IN A		66.155.9.238
+en.forums.wordpress.com 			        IN A		66.155.9.238
+forums.wordpress.com 			                IN A		66.155.9.238
+stats.wordpress.com 			                IN A		66.155.9.238
+s.wordpress.org	        		                IN A		68.232.44.111
+s0.wp.com	        		                IN A		68.232.44.111
+s1.wp.com	        		                IN A		68.232.44.111
+s2.wp.com 	        		                IN A 		68.232.44.111
+i0.wp.com		     		                IN A		192.0.77.2
+i1.wp.com		     		                IN A		192.0.77.2
+i2.wp.com		     		                IN A		192.0.77.2
+s.w.org      		        		        IN A 		192.229.144.127
+
+;steam
+cdn.steamcommunity.com					IN A		125.56.201.187
+cdn.steampowered.com					IN A		125.56.201.187
+cdn.store.steampowered.com				IN A		61.244.242.24
+storefront.steampowered.com				IN A		203.116.74.210
+cdn.akamai.steamstatic.com				IN A		42.99.128.137
+steamcommunity-a.akamaihd.net				IN A		61.213.168.19
+
+;origin
+origin-a.akamaihd.net					IN A		58.240.53.194
+
+;mega
+mega.nz							IN A		154.53.224.166					
+g.cdn1.mega.co.nz					IN A		117.18.237.188
+
+;Amazon AWS
+ap-northeast-1.console.aws.amazon.com	                IN A		27.0.1.125
+ap-southeast-1.console.aws.amazon.com	                IN A 		54.240.226.19
+ap-southeast-2.console.aws.amazon.com	                IN A 		54.240.195.197
+aws.amazon.com 	                	                IN A 		176.32.100.36
+console.aws.amazon.com 	               	                IN A 		72.21.194.168
+eu-central-1.console.aws.amazon.com	                IN A 		54.239.54.107
+eu-west-1.console.aws.amazon.com 	                IN A 		178.236.4.251
+s3.amazonaws.com 	                	        IN A 		54.231.66.16
+s3-ap-northeast-1.amazonaws.com	                        IN A 		54.231.229.10
+s3-ap-southeast-1.amazonaws.com 	                IN A 		54.231.242.150
+s3-ap-southeast-2.amazonaws.com 	                IN A 		54.231.252.130
+s3-console-us-standard.console.aws.amazon.com	        IN A 		72.21.203.5
+s3-eu-central-1.amazonaws.com 	                        IN A 		54.231.192.41
+s3-eu-west-1.amazonaws.com 	                        IN A 		54.231.132.112
+s3-sa-east-1.amazonaws.com 	                        IN A 		54.231.253.78
+s3-us-west-1.amazonaws.com 	                        IN A 		54.231.237.85
+s3-us-west-2.amazonaws.com 	                        IN A 		54.231.160.48
+sa-east-1.console.aws.amazon.com 	                IN A 		177.72.244.68
+us-west-1.console.aws.amazon.com 	                IN A 		204.246.162.198
+us-west-2.console.aws.amazon.com 	                IN A 		54.240.250.61
+github-cloud.s3.amazonaws.com 	                        IN A 		54.231.34.41
+github-com.s3.amazonaws.com 	                        IN A 		54.231.48.40
+
+;Archive 
+archive.org                                             IN A            207.241.224.2
+web.archive.org                                         IN A            207.241.226.190
+
+;DuckDuckGo
+duckduckgo.com                                          IN A            46.51.216.186
+www.duckduckgo.com                                      IN A            46.51.216.186
+ac.duckduckgo.com                                       IN A            46.51.216.186
+icons.duckduckgo.com                                    IN A            54.251.178.52
+images.duckduckgo.com                                   IN A            54.251.178.52
+help.duckduckgo.com                                     IN A            96.45.83.209

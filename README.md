@@ -1,5 +1,4 @@
-此分支暂时有问题，rpm安装提示依赖问题。
-近日将重写代码，进行编译式安装。
+近期将更新编译安装bind9.10.3.p3的脚本，勿运行/bin/ 下的安装脚本。
 
 # PandaDNS
 Better Internet
@@ -12,29 +11,33 @@ Better Internet
 
 [more about](http://dns.pandadns.xyz/)
 
-#Installation
-* cd /root
-* git clone https://github.com/zyqf/DNS.git  && cd DNS && bash install.sh
+#INSTALLATION
+### NOTE  
+* Your VPS must be in China
+* Only support Centos 6.X
 
-#Update rpz.zone
+### RUN
+* `git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
 
-python /root/DNS/bin/update.py
+#UPDATE rpz.zone flie
+
+* `python /root/DNS/bin/update.py`
 
 or
 
-crontab -e
+* `crontab -e`
 
-00 02 * * * python /root/DNS/bin/update.py
+* 00 02 * * * python /root/DNS/bin/update.py
 
-#DNS server security
+#DNS SERVER SECURITY
 
-* add rule：iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
+* add rule：`iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit`
 
-* add rule：iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP
+* add rule：`iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP`
 
-* save rule：service iptables save
+* save rule：`service iptables save`
 
-* restart iptables：service iptables restart
+* restart `iptables：service iptables restart`
 
 
 

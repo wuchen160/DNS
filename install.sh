@@ -9,6 +9,7 @@ function Get_OS_Name()
 function Step1_Install_Package()
 {
 Get_OS_Name ;
+echo '1)Install Package...';
 if [ ${OS_Name} == "CentOS" ];then
 	yum install bind -y ;
 	iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
@@ -25,6 +26,7 @@ fi;
 
 function Step2_MkdirAndCopyFiles()
 {
+echo '2)Create dir and copy files';
 mkdir /PandaDNS/named -p ;
 mkdir /PandaDNS/named/data ;
 mkdir /PandaDNS/named/dynamic ;
@@ -37,8 +39,9 @@ Step3_Service ;
 
 function Step3_Service()
 {
+echo '3)Reload Service'
 	service named restart ;
-Step4_Finish ;
+	Step4_Finish ;
 }
 
 function Step4_Finish()
@@ -46,8 +49,6 @@ function Step4_Finish()
 echo '|-------------------COMPLETE-----------------------|' ;
 echo '|      The script was finish.Please Check!         |' ;
 echo '|   PandaDNS Project : https://github.com/zyqf/DNS |' ;
-echo '|--------------------THANKS------------------------|' ;
-echo '| @HuanMeng0 @codexss @tonyxue                     |' ;
 echo '|-------------------ENJOY IT!----------------------|' ;
 }
 
