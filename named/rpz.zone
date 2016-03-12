@@ -76,7 +76,7 @@ google.cn						IN A		203.208.43.114
 messages-facebook.com					IN A		173.252.89.136
 facebook.net						IN A		182.239.95.136
 facebook.com						IN A		182.239.95.136
-fbcdn.net						IN A		1.13.95.14
+fbcdn.net						IN A		31.13.95.14
 *.messages-facebook.com					IN A		173.252.89.136
 *.facebook.net						IN A		182.239.95.136
 *.facebook.com						IN A		182.239.95.136
