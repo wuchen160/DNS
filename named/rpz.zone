@@ -225,7 +225,16 @@ s1.wordpress.com 	        		        IN A		68.232.44.111
 s2.wordpress.com 	        		        IN A 		68.232.44.111
 s.wordpress.com	        		                IN A		68.232.44.111
 lb.wordpress.com	     		                IN A 		66.155.9.238
-*.wordpress.com 	        		        IN A 		66.155.9.238
+wpcom.wordpress.com	        		        IN A 		66.155.9.238
+zh.wordpress.com 	        		        IN A 		66.155.9.238
+zh-cn.wordpress.com	        		        IN A 		66.155.9.238
+zh-sg.wordpress.com 	        		        IN A 		66.155.9.238
+lucifr.wordpress.com      		                IN A 		66.155.9.238
+dashboard.wordpress.com 			        IN A		66.155.9.238
+en.blog.wordpress.com 			                IN A		66.155.9.238
+en.forums.wordpress.com 			        IN A		66.155.9.238
+forums.wordpress.com 			                IN A		66.155.9.238
+stats.wordpress.com 			                IN A		66.155.9.238
 s.wordpress.org	        		                IN A		68.232.44.111
 s0.wp.com	        		                IN A		68.232.44.111
 s1.wp.com	        		                IN A		68.232.44.111
