@@ -25,7 +25,7 @@ www.gcr.io						IN A		64.233.162.82
 com.google						IN A		64.233.162.82
 *.appspot.com						IN A		64.233.162.87
 *.google.com						IN A		64.233.162.82
-*.google.com						IN AAAA		2404:6800:4005:808::2003
+;*.google.com						IN AAAA		2404:6800:4005:808::2003
 *.google.com.hk						IN A		64.233.162.82
 *.google.com.co.jp					IN A		64.233.162.82
 *.logger.com						IN A		64.233.162.82
