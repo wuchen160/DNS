@@ -23,6 +23,8 @@ google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
 com.google						IN A		64.233.162.82
+ingress.com                                             IN A            72.14.249.180
+*.ingress.com                                           IN A            72.14.249.180
 *.appspot.com						IN A		64.233.162.87
 *.google.com						IN A		64.233.162.82
 *.google.com.hk						IN A		64.233.162.82
