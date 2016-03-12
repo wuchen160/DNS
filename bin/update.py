@@ -1,3 +1,4 @@
+!#/usr/bin/python
 import hashlib
 import os,sys
  
