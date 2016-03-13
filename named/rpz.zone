@@ -227,7 +227,7 @@ s2.wordpress.com 	        		        IN A 		68.232.44.111
 s.wordpress.com	        		                IN A		68.232.44.111
 lb.wordpress.com	     		                IN A 		66.155.9.238
 wpcom.wordpress.com	        		        IN A 		66.155.9.238
-en.wordpress.com 		 		        IN A  		192.0.78.17
+en.wordpress.com 		 		        IN A  		192.0.78.13
 zh.wordpress.com 	        		        IN A 		192.0.78.13
 zh-cn.wordpress.com	        		        IN A 		192.0.78.13
 zh-sg.wordpress.com 	        		        IN A 		192.0.78.13
