@@ -17,7 +17,6 @@ android.l.google.com					IN A		64.233.162.85
 android.clients.google.com				IN A		64.233.162.85
 mtalk.google.com					IN A		64.233.188.188
 abc.xyz							IN A		64.233.162.85
-googlewave.com						IN A		64.233.162.82
 dl.google.com						IN A		64.233.162.82
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
@@ -228,9 +227,10 @@ s2.wordpress.com 	        		        IN A 		68.232.44.111
 s.wordpress.com	        		                IN A		68.232.44.111
 lb.wordpress.com	     		                IN A 		66.155.9.238
 wpcom.wordpress.com	        		        IN A 		66.155.9.238
-zh.wordpress.com 	        		        IN A 		66.155.9.238
-zh-cn.wordpress.com	        		        IN A 		66.155.9.238
-zh-sg.wordpress.com 	        		        IN A 		66.155.9.238
+en.wordpress.com 		 		        IN A  		192.0.78.17
+zh.wordpress.com 	        		        IN A 		192.0.78.13
+zh-cn.wordpress.com	        		        IN A 		192.0.78.13
+zh-sg.wordpress.com 	        		        IN A 		192.0.78.13
 lucifr.wordpress.com      		                IN A 		66.155.9.238
 dashboard.wordpress.com 			        IN A		66.155.9.238
 en.blog.wordpress.com 			                IN A		66.155.9.238
