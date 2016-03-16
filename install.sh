@@ -4,7 +4,7 @@
 
 echo '|-------------------Installing---------------------|' ;
 echo '|install gcc openssl openssl-devel perl bind-utils |' ;
-echo '|Development Tools; About download size:60MB		 |' ;
+echo '|Development Tools; About download size:60MB       |' ;
 echo '|  PandaDNS Project : https://github.com/zyqf/DNS  |' ;
 echo '|--------------------------------------------------|' ;
 
