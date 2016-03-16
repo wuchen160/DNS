@@ -15,9 +15,9 @@ Better Internet
 ### NOTE  
 * Your VPS must be in China
 * Only support Centos 6.X
-
+* You need remove old bind version RUN `yum remove bind*`
 ### RUN
-* `git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
+* `git clone https://github.com/zyqf/DNS.git  && cd DNS && sh install.sh`
 
 #UPDATE rpz.zone flie
 

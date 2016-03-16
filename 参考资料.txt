@@ -1,0 +1,17 @@
+所有教程都是使用google与百度而来。
+
+鄙人只负责按部就班写成脚本，在编写此脚本期间，受益良多。
+
+愿我等善用google，百度，动脑动手解决，万不得已再向他人求助。
+
+如若遇到问题多如马牛，请借本专业书，打好自身基础，万万不得轻率向他人提问。
+
+言尽如此，各自尊重各自的时间。
+
+
+参考资料列表（包含但不限于此）
+http://xiejianglei163.blog.163.com/blog/static/1247276201441910377144/
+http://sohudrgon.blog.51cto.com/3088108/1589621
+http://blog.csdn.net/yangzhawen/article/details/50503426
+http://www.linuxidc.com/Linux/2012-03/57694p2.htm
+http://523958392.blog.51cto.com/9871195/1625849
