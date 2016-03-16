@@ -10,17 +10,30 @@ options {
 	directory "/usr/local/named/var";          
 	pid-file "named.pid";
 	listen-on port 53 { any; };
+	#listen-on port 5353 { any; };
 	listen-on-v6 port 53 { any; };
 	dump-file 	"/var/named/data/cache_dump.db";
-    statistics-file "/var/named/data/named_stats.txt";
-    memstatistics-file "/var/named/data/named_mem_stats.txt";
+    	statistics-file "/var/named/data/named_stats.txt";
+	memstatistics-file "/var/named/data/named_mem_stats.txt";
 	allow-query     { any; };
 	recursion yes;
 
 	dnssec-enable yes;
 	dnssec-validation yes;
 	dnssec-lookaside auto;
+	
+	/*DNS请求查询限制，防止攻击
+	rate-limit {
+            ipv4-prefix-length 32;
+            window 10;
+            responses-per-second 20;
+            errors-per-second 5;
+            nxdomains-per-second 5;
+            slip 2;
+        };
+        */
 
+	
 	response-policy { 
    		zone "rpz.zone" policy given; 
 	} 
