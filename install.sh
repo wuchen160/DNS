@@ -55,6 +55,8 @@ python /root/DNS/bin/create_named_service.py;
 chmod 755 /etc/rc.d/init.d/named;
 chkconfig --add named;
 
+mkdir /var/named;
+ln -s /usr/local/named/var/* /var/named/;
 ln -s /usr/local/named/etc/named.conf /etc/;
 ln -s /usr/local/named/sbin/* /usr/bin/;
 
