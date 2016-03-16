@@ -55,14 +55,14 @@ python /root/DNS/bin/create_named_service.py;
 chmod 755 /etc/rc.d/init.d/named;
 chkconfig --add named;
 
+touch /usr/local/named/var/rpz.zone
+python /root/DNS/bin/create_named.py;
+python /root/DNS/bin/update.py;
+
 mkdir /var/named;
 ln -s /usr/local/named/var/* /var/named/;
 ln -s /usr/local/named/etc/named.conf /etc/;
 ln -s /usr/local/named/sbin/* /usr/bin/;
-
-touch /usr/local/named/var/rpz.zone
-python /root/DNS/bin/create_named.py;
-python /root/DNS/bin/update.py;
 
 chown -R root:named /usr/local/named/var
 service named start
