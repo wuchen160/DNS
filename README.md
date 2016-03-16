@@ -18,13 +18,13 @@ Better Internet
 * You need remove old bind version RUN `yum remove bind*`
 
 ### RUN
-* `git clone https://github.com/zyqf/DNS.git  && cd DNS && sh install.sh`
+* `cd /root && git clone https://github.com/zyqf/DNS.git  && cd DNS && sh install.sh`
 
 #UPDATE rpz.zone flie
 
 * `python /root/DNS/bin/update.py`
 
-or
+#OR
 
 * `crontab -e`
 
