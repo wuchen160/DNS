@@ -19,19 +19,19 @@ def CalcMD5(filepath):
          
 
 
-os.system('rm -rf rpz.zone.nwe')
-os.system('wget -O rpz.zone.nwe "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone"')
+os.system('rm -rf rpz.zone.new')
+os.system('wget -O rpz.zone.new "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone"')
 
-old = CalcMD5("/var/named/rpz.zone")
-new = CalcMD5("rpz.zone.nwe")
+old = CalcMD5("/usr/local/named/var/rpz.zone")
+new = CalcMD5("rpz.zone.new")
 
 if old == new:
 	print('nothing can update')
 
 else:
 	os.system('')	
-	os.system('mv /var/named/rpz.zone /var/named/rpz.zone.bak')
-	os.system('mv rpz.zone.nwe /var/named/rpz.zone')
+	os.system('mv /usr/local/named/var/rpz.zone /usr/local/named/var/rpz.zone.bak')
+	os.system('mv rpz.zone.new /usr/local/named/var/rpz.zone')
 	os.system('rndc reload')	
 	print('update have done,thanks!')
 

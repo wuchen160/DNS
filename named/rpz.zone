@@ -17,12 +17,13 @@ android.l.google.com					IN A		64.233.162.85
 android.clients.google.com				IN A		64.233.162.85
 mtalk.google.com					IN A		64.233.188.188
 abc.xyz							IN A		64.233.162.85
-googlewave.com						IN A		64.233.162.82
 dl.google.com						IN A		64.233.162.82
 google.com						IN A		64.233.162.82
 gcr.io							IN A		64.233.162.82
 www.gcr.io						IN A		64.233.162.82
 com.google						IN A		64.233.162.82
+ingress.com                                             IN A            72.14.249.180
+*.ingress.com                                           IN A            72.14.249.180
 *.appspot.com						IN A		64.233.162.87
 *.google.com						IN A		64.233.162.82
 *.google.com.hk						IN A		64.233.162.82
@@ -76,11 +77,11 @@ google.cn						IN A		203.208.43.114
 messages-facebook.com					IN A		173.252.89.136
 facebook.net						IN A		182.239.95.136
 facebook.com						IN A		182.239.95.136
-fbcdn.net						IN A		1.13.95.14
+fbcdn.net						IN A		31.13.95.14
 *.messages-facebook.com					IN A		173.252.89.136
 *.facebook.net						IN A		182.239.95.136
 *.facebook.com						IN A		182.239.95.136
-*.fbcdn.net						IN A		31.13.95.14
+*.fbcdn.net 						IN A		31.13.95.14
 
 ;instagram
 instagram.com						IN A		31.13.95.48
@@ -226,9 +227,10 @@ s2.wordpress.com 	        		        IN A 		68.232.44.111
 s.wordpress.com	        		                IN A		68.232.44.111
 lb.wordpress.com	     		                IN A 		66.155.9.238
 wpcom.wordpress.com	        		        IN A 		66.155.9.238
-zh.wordpress.com 	        		        IN A 		66.155.9.238
-zh-cn.wordpress.com	        		        IN A 		66.155.9.238
-zh-sg.wordpress.com 	        		        IN A 		66.155.9.238
+en.wordpress.com 		 		        IN A  		192.0.78.13
+zh.wordpress.com 	        		        IN A 		192.0.78.13
+zh-cn.wordpress.com	        		        IN A 		192.0.78.13
+zh-sg.wordpress.com 	        		        IN A 		192.0.78.13
 lucifr.wordpress.com      		                IN A 		66.155.9.238
 dashboard.wordpress.com 			        IN A		66.155.9.238
 en.blog.wordpress.com 			                IN A		66.155.9.238
@@ -294,3 +296,9 @@ ac.duckduckgo.com                                       IN A            46.51.21
 icons.duckduckgo.com                                    IN A            54.251.178.52
 images.duckduckgo.com                                   IN A            54.251.178.52
 help.duckduckgo.com                                     IN A            96.45.83.209
+
+;Imgur
+imgur.com                                               IN A            103.245.222.193
+www.imgur.com                                           IN A            103.245.222.193
+i.imgur.com                                             IN A            103.245.222.193
+s.imgur.com                                             IN A            103.245.222.193

@@ -1,56 +1,72 @@
-#!/bin/sh
+#!/bin/bash
+# Github:https://github.com/zyqf/DNS
 
-function Get_OS_Name()
-{
-	egrep -i "centos" /etc/issue && OS_Name='CentOS';
-	[ "$OS_Name" == '' ]
-}
+echo '|-------------------Installing---------------------|' ;
+echo '|install gcc openssl openssl-devel perl bind-utils |' ;
+echo '|Development Tools; About download size:60MB       |' ;
+echo '|  PandaDNS Project : https://github.com/zyqf/DNS  |' ;
+echo '|--------------------------------------------------|' ;
 
-function Step1_Install_Package()
-{
-Get_OS_Name ;
-echo '1)Install Package...';
-if [ ${OS_Name} == "CentOS" ];then
-	yum install bind -y ;
-	iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
-	iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP
-	service iptables save ;
-	service iptables restart ;
-	Step2_MkdirAndCopyFiles ;
-fi;
-if [ ${OS_Name} == '' ];then
-	echo "The system does not support.You can manually install." ;
-	exit;
-fi;
-}
+yum groupinstall "Development Tools" -y ;
+yum install gcc openssl openssl-devel perl bind-utils -y;
+yum groupinstall "Development Libraries" -y;
 
-function Step2_MkdirAndCopyFiles()
-{
-echo '2)Create dir and copy files';
-mkdir /PandaDNS/named -p ;
-mkdir /PandaDNS/named/data ;
-mkdir /PandaDNS/named/dynamic ;
-mkdir /PandaDNS/named/slaves ; 
-cp $(pwd)/named/* /PandaDNS/named/ -a -f ;
-cp $(pwd)/named.rfc1912.zones/named.rfc1912.zones /PandaDNS/named.rfc1912.zones -f ;
-cp $(pwd)/named.conf /etc/named.conf -f ;
-Step3_Service ;
-}
+echo '|-------------------Downloading--------------------|' ;
+echo '|download bind-9.10.3-P4 ..........................|' ;
+echo '|--------------------------------------------------|' ;
+cd /tmp;
+wget -O bind.tar.gz "https://www.isc.org/downloads/file/bind-9-10-3-p4/?version=tar-gz";
+tar -zxvf bind.tar.gz;
 
-function Step3_Service()
-{
-echo '3)Reload Service'
-	service named restart ;
-	Step4_Finish ;
-}
 
-function Step4_Finish()
-{
+echo '|-------------------Configure----------------------|' ;
+echo '|./configure --prefix=/usr/local/named ............|' ;
+echo '|--------------------------------------------------|' ;
+
+
+cd bind-9.10.3-P4;
+./configure --prefix=/usr/local/named  --enable-threads --enable-largefile;
+
+echo '|-------------------Make install-------------------|' ;
+echo '|make install bind9.3.4 ...........................|' ;
+echo '|--------------------------------------------------|' ;
+make && make install;
+
+echo '|-------------------Final treatment----------------|' ;
+setenforce 0;
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config;
+
+groupadd named;
+useradd -g named -d /usr/local/named -s /sbin/nologin named;
+
+cd /usr/local/named/etc;
+
+/usr/local/named/sbin/rndc-confgen > rndc.conf;
+cat rndc.conf > rndc.key;
+chmod 777 /usr/local/named/var;
+tail -10 rndc.conf | head -9 | sed s/#\ //g > named.conf;
+
+cd /usr/local/named/var;
+
+dig @a.root-servers.net . ns > named.root;
+rm -rf /etc/rc.d/init.d/named;
+python $(pwd)/bin/create_named_service.py;
+chmod 755 /etc/rc.d/init.d/named;
+chkconfig --add named;
+
+touch /usr/local/named/var/rpz.zone
+python $(pwd)/bin/create_named.py;
+python $(pwd)/bin/update.py;
+
+mkdir /var/named;
+ln -s /usr/local/named/var/* /var/named/;
+ln -s /usr/local/named/etc/named.conf /etc/;
+ln -s /usr/local/named/sbin/* /usr/bin/;
+
+chown -R root:named /usr/local/named/var
+service named start
+service named status
 echo '|-------------------COMPLETE-----------------------|' ;
 echo '|      The script was finish.Please Check!         |' ;
-echo '|   PandaDNS Project : https://github.com/zyqf/DNS |' ;
+echo '|  PandaDNS Project : https://github.com/zyqf/DNS  |' ;
 echo '|-------------------ENJOY IT!----------------------|' ;
-}
-
-
-Step1_Install_Package ;
