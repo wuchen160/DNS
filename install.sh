@@ -15,8 +15,8 @@ echo '|-------------------Downloading--------------------|' ;
 echo '|download bind-9.10.3-P4 ..........................|' ;
 echo '|--------------------------------------------------|' ;
 cd /tmp;
-wget -O bind.tar.gz "https://www.isc.org/downloads/file/bind-9-10-3-p4/?version=tar-gz";
-tar -zxvf bind.tar.gz;
+#wget -O bind.tar.gz "https://www.isc.org/downloads/file/bind-9-10-3-p4/?version=tar-gz";
+tar -zxvf bind-9.10.3-P4.tar.gz;
 
 
 echo '|-------------------Configure----------------------|' ;
