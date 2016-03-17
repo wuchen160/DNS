@@ -27,7 +27,7 @@ echo '|--------------------------------------------------|' ;
 
 
 cd bind-9.10.3-P4;
-./configure --prefix=/usr/local/named  --enable-threads --enable-largefile --disable-linux-caps;
+./configure --prefix=/usr/local/named  --enable-threads --enable-largefile;
 
 echo '|-------------------Make install-------------------|' ;
 echo '|make install bind9.3.4 ...........................|' ;
