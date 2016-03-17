@@ -1,6 +1,8 @@
 #!/bin/bash
 # Github:https://github.com/zyqf/DNS
 
+$RUNPATH=$(cd "$(dirname "$0")"; pwd)
+
 echo '|-------------------Installing---------------------|' ;
 echo '|install gcc openssl openssl-devel perl bind-utils |' ;
 echo '|Development Tools; About download size:60MB       |' ;
@@ -50,13 +52,13 @@ cd /usr/local/named/var;
 
 dig @a.root-servers.net . ns > named.root;
 rm -rf /etc/rc.d/init.d/named;
-python $(pwd)/bin/create_named_service.py;
+python $(RUNPATH)/bin/create_named_service.py;
 chmod 755 /etc/rc.d/init.d/named;
 chkconfig --add named;
 
 touch /usr/local/named/var/rpz.zone
-python $(pwd)/bin/create_named.py;
-python $(pwd)/bin/update.py;
+python $(RUNPATH)/bin/create_named.py;
+python $(RUNPATH)/bin/update.py;
 
 mkdir /var/named;
 ln -s /usr/local/named/var/* /var/named/;
