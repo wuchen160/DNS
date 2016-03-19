@@ -9,7 +9,7 @@ Better Internet
 
 * DNS2:120.27.30.176
 
-[more about](http://dns.pandadns.xyz/)
+[more about](https://dns.pandadns.xyz/)
 
 #INSTALLATION
 ### NOTE  
