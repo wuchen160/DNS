@@ -147,13 +147,13 @@ igcdn-photos-h-a.akamaihd.net				IN A		184.25.56.249
 *.akamaihd.net						IN A		61.213.168.51
 
 ;dropbox
-dropbox.com						IN A		205.251.194.52
-www.dropbox.com						IN A		205.251.195.5
-forums.dropbox.com					IN A		54.192.72.89
-dl-client3.dropbox.com					IN A		205.251.195.5
-client1.dropbox.com					IN A		205.251.195.5
-d.dropbox.com						IN A		192.33.14.30
-;*.dropbox.com						IN A		108.160.172.238
+dropbox.com						IN A		219.76.4.4
+www.dropbox.com						IN A		219.76.4.4
+forums.dropbox.com					IN A		219.76.4.4
+dl-client3.dropbox.com					IN A		219.76.4.4
+client1.dropbox.com					IN A		219.76.4.4
+d.dropbox.com						IN A		219.76.4.4
+;*.dropbox.com						IN A		219.76.4.4
 
 ;xda
 cdn.www.xda-developers.com 				IN A 		68.232.44.229
