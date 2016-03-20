@@ -153,7 +153,7 @@ forums.dropbox.com					IN A		219.76.4.4
 dl-client3.dropbox.com					IN A		219.76.4.4
 client1.dropbox.com					IN A		219.76.4.4
 d.dropbox.com						IN A		219.76.4.4
-;*.dropbox.com						IN A		219.76.4.4 未测试
+*.dropbox.com						IN A		219.76.4.4
 
 ;xda
 cdn.www.xda-developers.com 				IN A 		68.232.44.229
