@@ -1,4 +1,4 @@
-近期将更新编译安装bind9.10.3.p3的脚本，勿运行/bin/ 下的安装脚本。
+
 
 # PandaDNS
 Better Internet
@@ -16,6 +16,8 @@ Better Internet
 * Your VPS must be in China
 * Only support Centos 6.X
 * You need remove old bind version RUN `yum remove bind*`
+
+####If you want to install on docker,please read [Install with docker](https://github.com/zyqf/DNS/wiki/Install-with-docker)
 
 ### RUN
 * `cd /root && git clone https://github.com/zyqf/DNS.git  && cd DNS && sh install.sh`
