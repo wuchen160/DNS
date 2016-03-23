@@ -302,3 +302,34 @@ imgur.com                                               IN A            103.245.
 www.imgur.com                                           IN A            103.245.222.193
 i.imgur.com                                             IN A            103.245.222.193
 s.imgur.com                                             IN A            103.245.222.193
+
+;cloudflare
+
+www.cloudflare.com					IN A		198.41.214.162
+
+;flickr
+
+ac4.farm4.staticflickr.com				IN A		76.13.18.77
+adjax.flickr.yahoo.com					IN A		209.191.105.102
+api.flickr.com						IN A		121.101.144.112
+bf1.farm3.staticflickr.com				IN A		98.137.205.236
+bf1.farm6.staticflickr.com				IN A		98.139.21.45
+bf1.farm7.staticflickr.com				IN A		98.139.235.135
+c5.ah.yahoo.com						IN A		119.161.9.151
+content.yieldmanager.edgesuite.net			IN A		204.0.5.35
+d.yimg.com						IN A		119.160.254.215
+de.yahoo.com						IN A		106.10.136.195
+e.yimg.com						IN A		119.160.254.215
+edit.yahoo.com						IN A		98.139.21.169
+farm1.staticflickr.com					IN A		68.142.214.43
+farm2.staticflickr.com					IN A		69.147.90.159
+farm3.staticflickr.com					IN A		77.238.160.184
+farm4.staticflickr.com					IN A		76.13.18.77
+farm5.staticflickr.com					IN A		76.13.18.79
+farm6.staticflickr.com					IN A		98.136.171.208
+farm7.staticflickr.com					IN A		98.138.250.88
+flickr.com						IN A		69.147.76.173
+l.yimg.com						IN A		119.160.254.215
+m.flickr.com						IN A		208.71.44.31
+www.flickr.com						IN A		183.177.81.75
+
