@@ -55,7 +55,7 @@ python /root/DNS/bin/create_named_service.py;
 chmod 755 /etc/rc.d/init.d/named;
 chkconfig --add named;
 
-touch /usr/local/named/var/rpz.zone
+touch /usr/local/named/var/rpz.zone;
 python /root/DNS/bin/create_named.py;
 python /root/DNS/bin/update.py;
 
@@ -64,9 +64,9 @@ ln -s /usr/local/named/var/* /var/named/;
 ln -s /usr/local/named/etc/named.conf /etc/;
 ln -s /usr/local/named/sbin/* /usr/bin/;
 
-chown -R root:named /usr/local/named/var
-service named start
-service named status
+chown -R root:named /usr/local/named/var;
+service named start;
+service named status;
 echo '|-------------------COMPLETE-----------------------|' ;
 echo '|      The script was finish.Please Check!         |' ;
 echo '|  PandaDNS Project : https://github.com/zyqf/DNS  |' ;
