@@ -190,7 +190,6 @@ support.box.com                                         IN A            104.218.
 www.box.com                                             IN A            74.112.184.85	
 www.box.net                                             IN A            74.112.184.80
 
-;apple
 play.itunes.apple.com					IN A            118.215.176.66
 upp.itunes.apple.com					IN A            118.215.176.66
 client-api.itunes.apple.com				IN A            118.215.176.66
@@ -210,6 +209,14 @@ streamingaudio.itunes.apple.com				IN A		58.50.31.35
 aod.itunes.apple.com					IN A		58.50.31.35
 iosapps.itunes.apple.com				IN A		58.50.31.35
 osxapps.itunes.apple.com				IN A		58.50.31.35
+
+;apple Spotify CDN
+i.scdn.co						IN A		117.18.232.151
+p.scdn.co						IN A		117.18.232.151
+r.scdn.co						IN A		117.18.232.151
+t.scdn.co						IN A		117.18.232.151
+u.scdn.co						IN A		117.18.232.151
+audio-ec.spotify.com					IN A		117.18.232.151
 
 ;wordpress
 s.gravatar.com						IN A		68.232.44.121
