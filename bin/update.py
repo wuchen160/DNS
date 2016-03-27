@@ -32,6 +32,6 @@ else:
 	os.system('')	
 	os.system('mv /usr/local/named/var/rpz.zone /usr/local/named/var/rpz.zone.bak')
 	os.system('mv rpz.zone.new /usr/local/named/var/rpz.zone')
-	os.system('rndc reload')	
+	os.system('service named restart')	
 	print('update have done,thanks!')
 
