@@ -57,7 +57,6 @@ ingress.com                                             IN A            72.14.24
 *.google.ci						IN A		64.233.162.82
 *.google.cl						IN A		64.233.162.82
 *.google.cm						IN A		64.233.162.82
-*.google.cn						IN A		64.233.162.82
 *.google.co.ao						IN A		64.233.162.82
 *.google.co.bw						IN A		64.233.162.82
 *.google.co.ck						IN A		64.233.162.82
