@@ -27,7 +27,7 @@ ingress.com                                             IN A            72.14.24
 *.appspot.com						IN A		64.233.162.87
 *.google.com						IN A		64.233.162.82
 *.google.com.hk						IN A		64.233.162.82
-*.google.com.co.jp					IN A		64.233.162.82
+*.google.co.jp					IN A		64.233.162.82
 *.google.ac						IN A		64.233.162.82
 *.google.ad						IN A		64.233.162.82
 *.google.ae						IN A		64.233.162.82
