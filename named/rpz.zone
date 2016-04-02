@@ -272,6 +272,7 @@ ingress.com                                             IN A            72.14.24
 
 ;youtube
 *.ytimg.com						IN A		182.239.95.136
+*.youtu.be						IN A		182.239.95.136
 *.youtube.com						IN A		182.239.95.136
 *.googlevideo.com					IN A		182.239.95.136
 
