@@ -306,15 +306,17 @@ google.cn						IN A		203.208.43.114
 *.google.cn						IN A		203.208.40.146
 
 ;facebook
-fb.me						IN A 			173.252.81.7
-messages-facebook.com					IN A		173.252.81.7
+fb.me						IN A 			182.239.127.137
+messages-facebook.com					IN A		182.239.127.137	
 facebook.net						IN A		104.78.23.174
-facebook.com						IN A		182.239.95.136
-fbcdn.net						IN A		173.252.81.7
-*.messages-facebook.com					IN A		173.252.89.136
+facebook.com						IN A		182.239.127.137	
+fbcdn.net						IN A		31.13.66.9
+*.messages-facebook.com					IN A		182.239.127.137
 *.facebook.net						IN A		104.78.23.174
-*.facebook.com						IN A		182.239.95.136
+*.facebook.com						IN A		182.239.127.137
 *.fbcdn.net 						IN A		183.111.23.18
+
+
 
 ;instagram
 instagram.com						IN A		31.13.95.48
