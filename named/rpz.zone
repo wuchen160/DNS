@@ -306,7 +306,7 @@ google.cn						IN A		203.208.43.114
 *.google.cn						IN A		203.208.40.146
 
 ;facebook
-fb.me						IN A 			182.239.127.137
+fb.me							IN A 		182.239.127.137
 messages-facebook.com					IN A		182.239.127.137	
 facebook.net						IN A		104.78.23.174
 facebook.com						IN A		182.239.127.137	
