@@ -13,6 +13,7 @@ id.pandadns						IN CNAME	from.github.pandadns.
 from.github.pandadns					IN A		52.94.41.38
 
 ;GOOGLE
+fonts.googleapis.com					IN A		203.208.39.227
 android.l.google.com					IN A		182.239.127.137
 android.clients.google.com				IN A		182.239.127.137
 *.android.com						IN A		182.239.127.137
