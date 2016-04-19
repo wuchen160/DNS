@@ -312,10 +312,13 @@ messages-facebook.com					IN A		182.239.127.137
 facebook.net						IN A		104.78.23.174
 facebook.com						IN A		182.239.127.137	
 fbcdn.net						IN A		31.13.66.9
+scontent.xx.fbcdn.net					IN A		31.13.69.203
+video.xx.fbcdn.net					IN A		31.13.95.14
+
 *.messages-facebook.com					IN A		182.239.127.137
 *.facebook.net						IN A		104.78.23.174
 *.facebook.com						IN A		182.239.127.137
-*.fbcdn.net 						IN A		183.111.23.18
+*.fbcdn.net 						IN A		31.13.95.14
 
 
 
