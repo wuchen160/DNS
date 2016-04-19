@@ -362,11 +362,12 @@ visuals.soundcloud.com					IN A		68.232.44.127
 t.co							IN A		185.45.5.47
 tinypic.com						IN A		209.17.68.209
 twimg.com						IN A		185.45.5.41
+video.twimg.com						IN A		104.244.43.7
 twitter.com						IN A		104.244.42.195
 *.t.co							IN A		185.45.5.47
 *.tinypic.com						IN A		209.17.68.209
 *.twimg.com						IN A		185.45.5.41
-*.twitter.com						IN A		104.244.42.195
+*.twitter.com						IN A		104.244.42.193
 
 ;wikipedia
 wikipedia.org						IN A		198.35.26.96
