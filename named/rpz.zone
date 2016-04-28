@@ -49,10 +49,10 @@ ingress.com                                             IN A            72.14.24
 ;youtube
 youtu.be						IN A		182.239.95.136
 youtube.com						IN A		182.239.95.136
-*.ytimg.com						IN A		74.125.132.84
-*.youtu.be						IN A		74.125.132.84
-*.youtube.com						IN A		74.125.132.84
-*.googlevideo.com					IN A		74.125.132.84
+*.ytimg.com						IN A		182.239.127.137
+*.youtu.be						IN A		182.239.127.137
+*.youtube.com						IN A		182.239.127.137
+*.googlevideo.com					IN A		182.239.127.137
 
 
 ;gstaticStart
