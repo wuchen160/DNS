@@ -132,12 +132,12 @@ promoted.soundcloud.com					IN A		68.232.44.127
 visuals.soundcloud.com					IN A		68.232.44.127
 
 ;twitter
-t.co							IN A		185.45.5.47
+t.co							IN A		104.244.42.69
 tinypic.com						IN A		209.17.68.209
 twimg.com						IN A		185.45.5.41
-video.twimg.com						IN A		104.244.43.7
-twitter.com						IN A		104.244.42.195
-*.t.co							IN A		185.45.5.47
+video.twimg.com						IN A		104.244.42.65
+twitter.com						IN A		104.244.42.65
+*.t.co							IN A		104.244.42.69
 *.tinypic.com						IN A		209.17.68.209
 *.twimg.com						IN A		185.45.5.41
 *.twitter.com						IN A		104.244.42.193
