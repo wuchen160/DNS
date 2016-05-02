@@ -19,19 +19,32 @@ def CalcMD5(filepath):
          
 
 
-os.system('rm -rf rpz.zone.new')
-os.system('wget -O rpz.zone.new "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone"')
+def update_rpz():
+	os.system('rm -rf rpz.zone.new')
+	os.system('wget -O rpz.zone.new "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone"')
 
-old = CalcMD5("/usr/local/named/var/rpz.zone")
-new = CalcMD5("rpz.zone.new")
+	old = CalcMD5("/usr/local/named/var/rpz.zone")
+	new = CalcMD5("rpz.zone.new")
 
-if old == new:
-	print('nothing can update')
+	if old == new:
+		print('nothing can update')
 
-else:
-	os.system('')	
-	os.system('mv /usr/local/named/var/rpz.zone /usr/local/named/var/rpz.zone.bak')
-	os.system('mv rpz.zone.new /usr/local/named/var/rpz.zone')
-	os.system('service named restart')	
-	print('update have done,thanks!')
+	else:
+		os.system('')	
+		os.system('mv /usr/local/named/var/rpz.zone /usr/local/named/var/rpz.zone.bak')
+		os.system('mv rpz.zone.new /usr/local/named/var/rpz.zone')
+		os.system('service named restart')	
+		print('update have done,thanks!')
 
+
+def check_exist(path):
+	if os.path.exists(path):
+		print 'Find old rpz.zone'
+	else:
+		os.system('touch /usr/local/named/var/rpz.zone')
+
+
+if __name__ == '__main__':
+
+	check_exist('/usr/local/named/var/rpz.zone')
+	update_rpz()

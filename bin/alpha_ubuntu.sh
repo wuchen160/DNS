@@ -2,7 +2,7 @@
 # @zyqf
 # email:qq767026763@gmail.com
 # NOT run !
-
+RUNPATH=`pwd`
 echo '|-------------------Installing---------------------|' ;
 echo '|install gcc openssl openssl-devel perl bind-utils |' ;
 echo '|Development Tools; About download size:60MB       |' ;
@@ -15,7 +15,7 @@ echo '|-------------------Downloading--------------------|' ;
 echo '|download bind-9.10.3-P4 ..........................|' ;
 echo '|--------------------------------------------------|' ;
 cd /tmp;
-wget -O bind.tar.gz "https://www.isc.org/downloads/file/bind-9-10-3-p4/?version=tar-gz";
+#wget -O bind.tar.gz "https://o5obpsd7a.qnssl.com/bind.tar.gz";
 tar -zxvf bind.tar.gz;
 
 
@@ -49,14 +49,14 @@ tail -10 rndc.conf | head -9 | sed s/#\ //g > named.conf;
 cd /usr/local/named/var;
 
 dig @a.root-servers.net . ns > named.root;
-rm -rf /etc/rc.d/init.d/named;
-python /root/DNS/bin/create_named_service.py;
-chmod 755 /etc/rc.d/init.d/named;
-chkconfig --add named;
+#rm -rf /etc/rc.d/init.d/named;
+python $RUNPATH/bin/create_named_config.py;
+#chmod 755 /etc/rc.d/init.d/named;
+#chkconfig --add named;
 
 touch /usr/local/named/var/rpz.zone;
 #python /root/DNS/bin/create_named.py;
-python /root/DNS/bin/update.py;
+python $RUNPATH/bin/update.py;
 
 mkdir /var/named;
 ln -s /usr/local/named/var/* /var/named/;
@@ -64,9 +64,12 @@ ln -s /usr/local/named/etc/named.conf /etc/;
 ln -s /usr/local/named/sbin/* /usr/bin/;
 
 chown -R root:named /usr/local/named/var;
-#service named start;
-#service named status;
+named && echo 'service is running!';
 echo '|-------------------COMPLETE-----------------------|' ;
 echo '|      The script was finish.Please Check!         |' ;
 echo '|  PandaDNS Project : https://github.com/zyqf/DNS  |' ;
 echo '|-------------------ENJOY IT!----------------------|' ;
+
+echo '|USAG:| start:named | stop:killall named ' ;
+
+
