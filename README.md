@@ -14,13 +14,13 @@ Better Internet
 #INSTALLATION
 ### NOTE  
 * Your VPS must be in China
-* Only support Centos 6.X
+* Only support Centos 6.X or ubuntu 
 * You need remove old bind version RUN `yum remove bind*`
 
 ####If you want to install on docker,please read [Install with docker](https://github.com/zyqf/DNS/wiki/Install-with-docker)
 
 ### RUN
-* `cd /root && git clone https://github.com/zyqf/DNS.git  && cd DNS && sh install.sh`
+* `cd /root && git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
 
 #UPDATE rpz.zone flie
 
@@ -42,17 +42,6 @@ Better Internet
 
 * restart `iptables：service iptables restart`
 
-
-
-#参考书籍
-linux服务范例速查大全 刘丽霞 邱晓华 编著  清华大学出版社 第一版
-
-linux网络服务配置详解 何世晓 编著 清华大学出版社  第一版
-
-#参考途径
-www.baidu.com
-
-www.google.com
 
 #查询IP的ISP
 www.whatismyip.com/ip-address-lookup
