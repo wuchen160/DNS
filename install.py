@@ -39,7 +39,8 @@ def Downloadfile(URL):
 		checkfile(GccFilepath)
 
 	else:
-		os.system('wget -O bind.tar.gz -P /tmp ' + URL)
+		os.system('cd /tmp')
+		os.system('wget -O bind.tar.gz ' + URL)
 		if checkfile(GccFilepath) == 'error':
 			print 'Download a error file , please check your network! '
 
