@@ -52,7 +52,7 @@ def checkfile(ck_filepath):
 		print 'But it Md5 is error!'
 		print 'error MD5:' , MD5
 		os.system('rm -rf /tmp/bind.tar.gz')
-		Downloadfile(DowdloadURL)
+		#Downloadfile(DowdloadURL)
 		return 'error'
 
 
