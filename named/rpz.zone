@@ -39,6 +39,7 @@ ingress.com                                             IN A            72.14.24
 *.googlesource.com					IN A		220.255.2.153
 *.googlecode.com					IN A		220.255.2.153
 *.gmodules.com						IN A		220.255.2.153
+*.googleadservices.com				IN A		203.208.43.77
 
 
 *.gvt0.com						IN A		220.255.2.153
@@ -63,15 +64,15 @@ youtube.com						IN A		182.239.95.136
 goo.gl							IN A		182.239.127.137
 g.co							IN A		182.239.127.137
 app.simplenote.com					IN A		72.14.246.169
-*.googleapis.com					IN A		220.255.2.153
-*.googlehosted.com					IN A		220.255.2.153
+*.googleapis.com					IN A		182.239.127.137
+*.googlehosted.com					IN A		182.239.127.137
 *.2mdn.net						IN A		220.255.2.153
 *.urchin.com						IN A		220.255.2.153
 *.feedburner.com					IN A		220.255.2.153
 *.golang.org						IN A		220.255.2.153
 *.panoramio.com						IN A		220.255.2.153
 *.recaptcha.net						IN A		220.255.2.153
-*.googleusercontent.com					IN A		220.255.2.153
+*.googleusercontent.com					IN A		182.239.127.137
 
 
 ;GoogleChina
