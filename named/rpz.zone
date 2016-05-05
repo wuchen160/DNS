@@ -64,15 +64,15 @@ youtube.com						IN A		182.239.95.136
 goo.gl							IN A		182.239.127.137
 g.co							IN A		182.239.127.137
 app.simplenote.com					IN A		72.14.246.169
-*.googleapis.com					IN A		182.239.127.137
-*.googlehosted.com					IN A		182.239.127.137
+*.googleapis.com					IN A		220.255.2.153
+*.googlehosted.com					IN A		220.255.2.153
 *.2mdn.net						IN A		220.255.2.153
 *.urchin.com						IN A		220.255.2.153
 *.feedburner.com					IN A		220.255.2.153
 *.golang.org						IN A		220.255.2.153
 *.panoramio.com						IN A		220.255.2.153
 *.recaptcha.net						IN A		220.255.2.153
-*.googleusercontent.com					IN A		182.239.127.137
+*.googleusercontent.com					IN A		220.255.2.153
 
 
 ;GoogleChina
@@ -82,10 +82,10 @@ google.cn						IN A		203.208.43.114
 *.google.cn						IN A		203.208.40.146
 
 ;facebook
-fb.me							IN A 		182.239.127.137
-messages-facebook.com					IN A		182.239.127.137	
-facebook.net						IN A		104.78.23.174
-facebook.com						IN A		182.239.127.137	
+fb.me							IN A 		173.252.81.7
+messages-facebook.com					IN A		173.252.81.7
+facebook.net						IN A		173.252.81.7
+facebook.com						IN A		173.252.81.7	
 fbcdn.net						IN A		31.13.66.9
 scontent.xx.fbcdn.net					IN A		31.13.69.203
 video.xx.fbcdn.net					IN A		31.13.95.14
