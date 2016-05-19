@@ -139,6 +139,7 @@ tinypic.com						IN A		209.17.68.209
 twimg.com						IN A		185.45.5.41
 video.twimg.com						IN A		104.244.42.65
 twitter.com						IN A		104.244.42.65
+mobile.twitter.com					IN A		104.244.42.6
 *.t.co							IN A		104.244.42.69
 *.tinypic.com						IN A		209.17.68.209
 *.twimg.com						IN A		185.45.5.41
