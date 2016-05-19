@@ -134,16 +134,32 @@ promoted.soundcloud.com					IN A		68.232.44.127
 visuals.soundcloud.com					IN A		68.232.44.127
 
 ;twitter
-t.co							IN A		104.244.42.69
-tinypic.com						IN A		209.17.68.209
-twimg.com						IN A		185.45.5.41
-video.twimg.com						IN A		104.244.42.65
-twitter.com						IN A		104.244.42.65
-mobile.twitter.com					IN A		104.244.42.6
-*.t.co							IN A		104.244.42.69
-*.tinypic.com						IN A		209.17.68.209
-*.twimg.com						IN A		185.45.5.41
-*.twitter.com						IN A		104.244.42.193
+twitter.com						IN A		104.244.42.1 
+www.twitter.com						IN A		104.244.42.1 
+api.twitter.com						IN A		104.244.42.2 
+mobile.twitter.com					IN A		104.244.42.6 
+support.twitter.com					IN A		104.244.42.7 
+upload.twitter.com					IN A		104.244.42.11 
+tweetdeck.twitter.com					IN A		104.244.42.132 
+tweetdeck.com						IN A		104.244.42.132 
+syndication.twitter.com					IN A		104.244.42.136 
+syndication-o.twitter.com				IN A		104.244.42.136 
+cdn.syndication.twimg.com				IN A		104.244.42.136 
+cdn.syndication.twitter.com				IN A		104.244.42.136 
+cdn.api.twitter.com					IN A		104.244.42.2 
+preview.cdn.twitter.com					IN A		104.244.42.1 
+t.co							IN A		104.244.42.197 
+twitpic.com						IN A		173.236.110.98 
+tinypic.com						IN A		209.17.68.209 
+twimg.com						IN A		104.244.43.199 
+
+video.twimg.com						IN A		104.244.43.199
+*.twimg.com						IN A		104.244.43.199 
+*.tinypic.com						IN A		209.17.68.209 
+*.twitpic.com						IN A		173.236.110.98 
+*.t.co							IN A		104.244.42.69 
+*.tweetdeck.com						IN A		104.244.42.132 
+*.twitter.com						IN A		104.244.42.3 
 
 ;wikipedia
 wikipedia.org						IN A		198.35.26.96
