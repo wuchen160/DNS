@@ -58,6 +58,7 @@ youtube.com						IN A		182.239.95.136
 
 
 ;gstaticStart
+fonts.gstatic.com					IN A		203.208.43.88
 *.ggpht.com						IN A		220.255.2.153
 *.gstatic.com						IN A		220.255.2.153
 
