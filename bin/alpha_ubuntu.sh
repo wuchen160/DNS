@@ -41,14 +41,14 @@ useradd -g named -d /usr/local/named -s /sbin/nologin named;
 
 cd /usr/local/named/etc;
 
-/usr/local/named/sbin/rndc-confgen > rndc.conf;
-cat rndc.conf > rndc.key;
+/usr/local/named/sbin/rndc-confgen > /usr/local/named/etc/rndc.conf;
+cat rndc.conf > /usr/local/named/etc/rndc.key;
 chmod 777 /usr/local/named/var;
-tail -10 rndc.conf | head -9 | sed s/#\ //g > named.conf;
+tail -10 rndc.conf | head -9 | sed s/#\ //g > /usr/local/named/etc/named.conf;
 
 cd /usr/local/named/var;
 
-dig @a.root-servers.net . ns > named.root;
+dig @a.root-servers.net . ns > /usr/local/named/var/named.root;
 #rm -rf /etc/rc.d/init.d/named;
 python $RUNPATH/bin/create_named_config.py;
 #chmod 755 /etc/rc.d/init.d/named;
