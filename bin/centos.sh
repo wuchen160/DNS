@@ -41,8 +41,8 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config;
 groupadd named;
 useradd -g named -d /usr/local/named -s /sbin/nologin named;
 
-
-/usr/local/named/sbin/rndc-confgen > rndc.conf;
+cd /usr/local/named/etc
+/usr/local/named/sbin/rndc-confgen > /usr/local/named/etc/rndc.conf;
 cat rndc.conf > /usr/local/named/etc/rndc.key;
 chmod 777 /usr/local/named/var;
 tail -10 rndc.conf | head -9 | sed s/#\ //g > /usr/local/named/etc/named.conf;
