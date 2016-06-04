@@ -16,7 +16,11 @@ from.github.pandadns					IN A		52.94.41.38
 vimeo.com						IN A		104.156.85.217
 player.vimeo.com					IN A		104.156.81.217
 
+;tumblr
 
+tumblr.com 						IN A 		182.239.95.136
+*.tumblr.com 						IN A 		182.239.95.136
+*.assets.tumblr.com 					IN A 		182.239.95.136
 ;GOOGLE
 securetoken.googleapis.com 				IN A 		220.255.2.153
 firebasestorage.googleapis.com 				IN A 		220.255.2.153
