@@ -12,6 +12,18 @@ id.pandadns						IN CNAME	from.github.pandadns.
 *.id.pandadns						IN CNAME	from.github.pandadns.
 from.github.pandadns					IN A		52.94.41.38
 
+
+;telegram
+telegram.org 						IN A 149.154.167.99 
+www.telegram.org 					IN A 149.154.167.99 
+desktop.telegram.org 					IN A 149.154.167.99 
+core.telegram.org 					IN A 149.154.169.99 
+updates.tdesktop.com 					IN A 149.154.167.80 
+web.telegram.org 					IN A 149.154.167.120 
+flora.web.telegram.org 					IN A 149.154.171.22
+telegram.me 						IN A 149.154.167.118 
+www.telegram.m					 	IN A 149.154.167.118
+
 ;vimeo.com
 vimeo.com						IN A		104.156.85.217
 player.vimeo.com					IN A		104.156.81.217
