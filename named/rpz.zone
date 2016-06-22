@@ -17,7 +17,7 @@ from.github.pandadns					IN A		52.94.41.38
 telegram.org 						IN A 149.154.167.99 
 www.telegram.org 					IN A 149.154.167.99 
 desktop.telegram.org 					IN A 149.154.167.99 
-core.telegram.org 					IN A 149.154.169.99 
+core.telegram.org 					IN A 149.154.167.99
 updates.tdesktop.com 					IN A 149.154.167.80 
 web.telegram.org 					IN A 149.154.167.120 
 flora.web.telegram.org 					IN A 149.154.171.22
