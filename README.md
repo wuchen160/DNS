@@ -5,9 +5,9 @@ Better Internet
 
 #DEMO
 
-* DNS1:182.254.158.191
+* 北方:123.206.49.193
 
-* DNS2:120.27.30.176
+* 南方:120.27.30.176
 
 [more about](https://dns.pandadns.xyz/)
 
