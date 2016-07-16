@@ -86,7 +86,6 @@ goo.gl							IN A		182.239.127.137
 g.co							IN A		182.239.127.137
 app.simplenote.com					IN A		72.14.246.169
 *.googleapis.com					IN A		220.255.2.153
-*.googlehosted.com					IN A		220.255.2.153
 *.2mdn.net						IN A		220.255.2.153
 *.urchin.com						IN A		220.255.2.153
 *.feedburner.com					IN A		220.255.2.153
