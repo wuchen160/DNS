@@ -3,18 +3,18 @@
 # /usr/local/named/etc/named.conf
 # @zyqf
 # email:qq767026763@gmail.com
+IP_ADR= raw_input('Please enter your vps ip (*.*.*.*): ')
+IP_ADR_list = IP_ADR.split('.')
+
 
 print "\n Creating named.conf ....... \n"
-named_conf ='''
+named_conf =''' 
 options {
 	directory "/usr/local/named/var";          
 	pid-file "named.pid";
 	listen-on port 53 { any; };
 	#listen-on port 5353 { any; };
 	listen-on-v6 port 53 { any; };
-	dump-file 	"/var/named/data/cache_dump.db";
-    	statistics-file "/var/named/data/named_stats.txt";
-	memstatistics-file "/var/named/data/named_mem_stats.txt";
 	allow-query     { any; };
 	recursion yes;
 
@@ -22,7 +22,7 @@ options {
 	dnssec-validation yes;
 	dnssec-lookaside auto;
 	
-	/*DNS请求查询限制，防止攻击
+	
 	rate-limit {
             ipv4-prefix-length 32;
             window 10;
@@ -31,7 +31,6 @@ options {
             nxdomains-per-second 5;
             slip 2;
         };
-        */
 
 	
 	response-policy { 
@@ -186,15 +185,11 @@ zone "pandadns.com" IN {
 	file "pandadns.com.b";
 };
 
-// server 标识
-//
-// 把vps公网ip 例120.27.30.176 反写 30.27.120.in-addr.arpa
-// 并修改/var/named/pandadns.com.arpa文件中的记录 
-// zone "30.27.120.in-addr.arpa" IN {
-//	type master;
-//	file "pandadns.com.arpa";
-// };
-'''
+zone "%s.%s.%s.in-addr.arpa" IN {
+type master;
+file "pandadns.com.arpa";
+};
+'''%(IP_ADR_list[2],IP_ADR_list[1],IP_ADR_list[0])
 
 f=open('/usr/local/named/var/named.rfc1912.zones','a')
 f.write(str(named_rfc1912_zones))
@@ -217,12 +212,8 @@ $TTL 1D
 					1W	; expire
 					3H )	; minimum
 @	IN	NS	ns1.pandadns.com.
-176	IN	PTR	ns1.pandadns.com.
-
-
-;把vps公网ip 例120.27.30.176 反写 30.27.120.in-addr.arpa
-;176则填入最后一行
-'''
+%s	IN	PTR	ns1.pandadns.com.
+'''%IP_ADR_list[3]
 
 f=open('/usr/local/named/var/pandadns.com.arpa','a')
 f.write(str(pandadns_com_arpa))
@@ -244,12 +235,9 @@ $TTL 1D
 					1W	; expire
 					3H )	; minimum
 @	IN	NS	ns1.pandadns.com.
-ns1	IN	A	120.27.30.176 
-www	IN	A	120.27.30.177
-
-;需要修改120.27.30.176为vps公网ip 
-;
-'''
+ns1	IN	A	%s 
+www	IN	A	%s
+'''%(IP_ADR,IP_ADR)
 
 f=open('/usr/local/named/var/pandadns.com.b','a')
 f.write(str(pandadns_com_b))
