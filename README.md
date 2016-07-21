@@ -11,7 +11,7 @@
 
 ###  Midway will appear the following prompt , enter the public network ip
 
-* Please enter your vps ip (*.*.*.*): 
+* `Please enter your vps ip (*.*.*.*):`
 
 #Update file rpz.zone
 
