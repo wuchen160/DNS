@@ -9,7 +9,7 @@
 ### RUN
 * `cd /root && git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
 
-#OR
+#Update file rpz.zone
 
 * `crontab -e`
 
