@@ -16,12 +16,6 @@ options {
 	#listen-on port 5353 { any; };
 	listen-on-v6 port 53 { any; };
 	allow-query     { any; };
-	recursion yes;
-
-	dnssec-enable yes;
-	dnssec-validation yes;
-	dnssec-lookaside auto;
-	
 	
 	rate-limit {
             ipv4-prefix-length 32;
