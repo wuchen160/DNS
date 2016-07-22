@@ -11,8 +11,9 @@ else:
 while True:
 	f = open('/usr/local/named/var/named.root','rb')
 	text = f.read()
-	if 'root-servers' not in text:
+	if 'b.root-servers' not in text:
 		os.system('dig @a.root-servers.net . ns > /usr/local/named/var/named.root')
 	else:
 		print 'named.root is ok'
+		os.system('service named restart')
 		sys.exit()
