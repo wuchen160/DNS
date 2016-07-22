@@ -1,4 +1,4 @@
-#-*- code:utf-8 -*-
+#coding=utf-8
 #!/bin/python
 #
 import hashlib
@@ -18,10 +18,10 @@ if os.getuid() != 0 :
 def select_platform(system_platform):
 	if "buntu" in system_platform:
 		print 'start Install on Ubuntu '
-		os.system('sudo bash bin/alpha_ubuntu.sh')
+		os.system('sudo bash /root/DNS/bin/alpha_ubuntu.sh')
 	elif "entos" in system_platform:
 		print 'start Install on Centos '
-		os.system('sudo bash bin/centos.sh')
+		os.system('sudo bash /root/DNS/bin/centos.sh')
 	else :
 		print "WARM:NOT SUPPORT YOUR SYSTEM!"
 
@@ -39,7 +39,7 @@ def Downloadfile(URL):
 		checkfile(GccFilepath)
 
 	else:
-		os.system('wget -O bind.tar.gz ' + URL)
+		os.system('wget -O bind.tar.gz ' + URL + ' --no-check-certificate')
 		os.system('mv bind.tar.gz /tmp')
 		if checkfile(GccFilepath) == 'error':
 			print 'Download a error file , please check your network! '
@@ -60,3 +60,8 @@ if __name__ == '__main__':
 	
 	Downloadfile(DowdloadURL)
 	select_platform(system_platform)
+	#添加并刷新计划
+	os.system('crontab /root/DNS/bin/dnscron.cron')
+	os.system('/sbin/service crond reload')
+	os.system('/sbin/service crond restart')
+	

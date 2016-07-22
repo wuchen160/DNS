@@ -21,7 +21,7 @@ def CalcMD5(filepath):
 
 def update_rpz():
 	os.system('rm -rf rpz.zone.new')
-	os.system('wget -O rpz.zone.new "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone"')
+	os.system('wget -O rpz.zone.new "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone" --no-check-certificate')
 
 	old = CalcMD5("/usr/local/named/var/rpz.zone")
 	new = CalcMD5("rpz.zone.new")
