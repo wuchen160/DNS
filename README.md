@@ -21,7 +21,7 @@
 
 #Update file rpz.zone
 
-	Centos系统将自动执行任务,Ubuntu暂未测试,如不自动执行请按照下方手动添加
+Centos系统将自动执行任务,Ubuntu暂未测试,如不自动执行请按照下方手动添加
 
 * `crontab -e`
 
