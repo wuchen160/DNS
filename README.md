@@ -11,9 +11,6 @@
 
 * `wget https://raw.githubusercontent.com/zyqf/DNS/master-rpz/qinstall.sh && bash qinstall.sh `
 
-主机系统中已包含Git组件安装代码：
-
-* `cd /root && git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
 
 ###  Midway will appear the following prompt , enter the public network ip
 
