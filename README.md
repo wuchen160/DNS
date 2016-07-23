@@ -7,9 +7,9 @@
 ###If you want to install on docker,please read [Install with docker](https://github.com/zyqf/DNS/wiki/Install-with-docker)
 
 # Install 
-主机系统中未包含Git组件安装代码（如不确定，请选此项）：
 
-* `yum -y install git && cd /root && git clone https://github.com/zyqf/DNS.git  && cd DNS && python install.py`
+
+* `wget https://raw.githubusercontent.com/zyqf/DNS/master-rpz/qinstall.sh && bash qinstall.sh `
 
 主机系统中已包含Git组件安装代码：
 
