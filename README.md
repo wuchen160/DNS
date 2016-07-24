@@ -30,3 +30,4 @@ Centos系统将自动执行任务,Ubuntu暂未测试,如不自动执行请按照
 * [@HuanMeng](https://github.com/HuanMeng0)
 * [@codexss](https://github.com/codexss)
 * [@tonyxue](https://github.com/tonyxue)
+* [@fangzhengjin](https://github.com/fangzhengjin)
