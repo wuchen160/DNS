@@ -9,7 +9,7 @@
 # Install 
 
 
-* `wget https://raw.githubusercontent.com/zyqf/DNS/master-rpz/qinstall.sh && bash qinstall.sh `
+* `wget https://raw.githubusercontent.com/zyqf/DNS/master-rpz/qinstall.sh  --no-check-certificate && bash qinstall.sh `
 
 
 ###  Midway will appear the following prompt , enter the public network ip
