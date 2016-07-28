@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import hashlib
 import os
 import sys
 import platform
+from bin.update import CalcMD5
 
 DowdloadURL = 'https://o5obpsd7a.qnssl.com/bind.tar.gz'
 GccFilepath = '/tmp/bind.tar.gz'
@@ -24,14 +24,6 @@ def select_platform(system_platform):
         os.system('sudo bash bin/centos.sh')
     else:
         print "WARM:NOT SUPPORT YOUR SYSTEM!"
-
-
-def CalcMD5(filepath):
-    with open(filepath, 'rb') as f:
-        md5obj = hashlib.md5()
-        md5obj.update(f.read())
-        hash = md5obj.hexdigest()
-        return hash
 
 
 def Downloadfile(URL):
