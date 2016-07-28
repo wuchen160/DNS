@@ -4,16 +4,14 @@
 # @zyqf
 # email:qq767026763@gmail.com
 
-from urllib import urlopen
-from json import loads
+import urllib
+import re
 
 
 def getip():
-    # get your current IP address, by @brunobell
-    # welcome any star/fork :P  original URL:
-    # https://github.com/brunobell/PracticalPythonScripts/blob/master/getip.py
-    ip_api = r"https://api.ipify.org?format=json"
-    myip = loads(urlopen(ip_api).readline()).get("ip")
+    url = "http://whois.pconline.com.cn/ipJson.jsp"
+    request = urllib.urlopen(url).read()
+    myip = re.findall(r"\d{1,3}\.\d{1,3}\.\d{1,3}.\d{1,3}",request)[0]
     if myip:
         return myip
     else:
