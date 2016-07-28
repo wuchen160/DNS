@@ -1,21 +1,21 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # dig @a.root-servers.net . ns > /usr/local/named/var/named.root
+
 import os
 import sys
-filename = r'usr/local/named/var/named.root'
-if os.path.exists(filename):
+
+filename = '/usr/local/named/var/named.root'
+if os.path.isfile(filename):
     print 'OK,file exists.'
 else:
-    os.system('touch /usr/local/named/var/named.root')
+    os.system('touch ' + filename)
 
 while True:
-    f = open('/usr/local/named/var/named.root', 'rb')
-    text = f.read()
-    if 'b.root-servers' not in text:
-        os.system('dig @a.root-servers.net . ns > /usr/local/named/var/named.root')
-        f.close()
-    else:
-        print 'named.root is ok'
-        os.system('service named restart')
-        f.close()
-        sys.exit()
+    with open(filename, 'rb') as f:
+        text = f.read()
+        if 'b.root-servers' not in text:
+            os.system('dig @a.root - servers.net . ns > ' + filename)
+        else:
+            print 'named.root is ok'
+            os.system('service named restart')
+            sys.exit()

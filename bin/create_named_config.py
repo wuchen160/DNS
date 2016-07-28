@@ -1,9 +1,26 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # /usr/local/named/etc/named.conf
 # @zyqf
 # email:qq767026763@gmail.com
-IP_ADR = raw_input('Please enter your vps ip (*.*.*.*): ')
+
+from urllib import urlopen
+from json import loads
+
+
+def getip():
+    # get your current IP address, by @brunobell
+    # welcome any star/fork :P  original URL:
+    # https://github.com/brunobell/PracticalPythonScripts/blob/master/getip.py
+    ip_api = r"https://api.ipify.org?format=json"
+    myip = loads(urlopen(ip_api).readline()).get("ip")
+    if myip:
+        return myip
+    else:
+        raise RuntimeError("Failed to automatically get current IP address!")
+
+
+IP_ADR = getip()  # no need to manually input current IP now :)
 IP_ADR_list = IP_ADR.split('.')
 
 
@@ -46,11 +63,11 @@ zone "rpz.zone" {
 include "/usr/local/named/var/named.rfc1912.zones";
 
 '''
-f = open('/usr/local/named/etc/named.conf', 'a')
-f.write(str(named_conf))
-f.close()
 
-print "named.conf have created! \n"
+with open('/usr/local/named/etc/named.conf', 'a') as f:
+    f.write(str(named_conf))
+
+print "named.conf has been created! \n"
 print "--------------------------------------------------------- \n"
 
 
@@ -69,10 +86,10 @@ $TTL 3H
     AAAA	::1
 '''
 
-f = open('/usr/local/named/var/named.empty', 'a')
-f.write(str(named_empty))
-f.close()
-print "named.empty have created! \n"
+with open('/usr/local/named/var/named.empty', 'a') as f:
+    f.write(str(named_empty))
+
+print "named.empty has been created! \n"
 print "--------------------------------------------------------- \n"
 
 
@@ -92,11 +109,10 @@ $TTL 1D
     AAAA    ::1
 '''
 
-f = open('/usr/local/named/var/named.localhost', 'a')
-f.write(str(named_localhost))
-f.close()
+with open('/usr/local/named/var/named.localhost', 'a') as f:
+    f.write(str(named_localhost))
 
-print "named.localhost have created! \n"
+print "named.localhost has been created! \n"
 print "--------------------------------------------------------- \n"
 
 
@@ -116,10 +132,10 @@ $TTL 1D
     AAAA    ::1
 '''
 
-f = open('/usr/local/named/var/named.loopback', 'a')
-f.write(str(named_loopback))
-f.close()
-print "named.loopback have created! \n"
+with open('/usr/local/named/var/named.loopback', 'a') as f:
+    f.write(str(named_loopback))
+
+print "named.loopback has been created! \n"
 print "--------------------------------------------------------- \n"
 
 
@@ -180,11 +196,10 @@ file "pandadns.com.arpa";
 };
 ''' % (IP_ADR_list[2], IP_ADR_list[1], IP_ADR_list[0])
 
-f = open('/usr/local/named/var/named.rfc1912.zones', 'a')
-f.write(str(named_rfc1912_zones))
-f.close()
+with open('/usr/local/named/var/named.rfc1912.zones', 'a') as f:
+    f.write(str(named_rfc1912_zones))
 
-print "named.rfc1912.zones have created! \n"
+print "named.rfc1912.zones has been created! \n"
 print "--------------------------------------------------------- \n"
 
 
@@ -203,10 +218,10 @@ $TTL 1D
 %s	IN	PTR	ns1.pandadns.com.
 ''' % IP_ADR_list[3]
 
-f = open('/usr/local/named/var/pandadns.com.arpa', 'a')
-f.write(str(pandadns_com_arpa))
-f.close()
-print "pandadns.com.arpa have created! \n"
+with open('/usr/local/named/var/pandadns.com.arpa', 'a') as f:
+    f.write(str(pandadns_com_arpa))
+
+print "pandadns.com.arpa has been created! \n"
 print "--------------------------------------------------------- \n"
 
 
@@ -226,7 +241,7 @@ ns1	IN	A	%s
 www	IN	A	%s
 ''' % (IP_ADR, IP_ADR)
 
-f = open('/usr/local/named/var/pandadns.com.b', 'a')
-f.write(str(pandadns_com_b))
-f.close()
-print "pandadns.com.b have created! \n"
+with open('/usr/local/named/var/pandadns.com.b', 'a') as f:
+    f.write(str(pandadns_com_b))
+
+print "pandadns.com.b has been created! \n"

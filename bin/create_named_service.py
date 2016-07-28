@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*
-#/etc/rc.d/init.d/named
+# /etc/rc.d/init.d/named
 # @zyqf
 # email:qq767026763@gmail.com
+
 named = '''
 #！/bin/bash
 # vim /etc/rc.d/init.d/named
@@ -90,8 +91,7 @@ status)
     exit 2;;
 esac
 '''
-f = open('/etc/rc.d/init.d/named', 'a')
-f.write(str(named))
-f.close()
+with open('/etc/rc.d/init.d/named', 'a') as f:
+    f.write(str(named))
 
-print "\n it's have done !"
+print "\n it has been done now!"

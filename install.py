@@ -1,6 +1,6 @@
-#-*- code:utf-8 -*-
-#!/bin/python
-#
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import hashlib
 import os
 import sys
@@ -12,7 +12,7 @@ system_platform = platform.platform()
 
 if os.getuid() != 0:
     print "Please run with root!"
-    exit()
+    sys.exit(1)
 
 
 def select_platform(system_platform):
@@ -35,25 +35,35 @@ def CalcMD5(filepath):
 
 
 def Downloadfile(URL):
-    if os.path.exists(GccFilepath):
-        print 'File has existed!'
-        checkfile(GccFilepath)
-
-    else:
+    if not os.path.isfile(GccFilepath):
         os.system('wget -O bind.tar.gz ' + URL + ' --no-check-certificate')
         os.system('mv bind.tar.gz /tmp')
-        if checkfile(GccFilepath) == 'error':
-            print 'Download a error file , please check your network! '
+        print "File download success."
+    else:
+        print 'File already exists!'
+
+    if not checkfile(GccFilepath):
+        print 'File hash does not match, consider check your network!'
+        sys.exit(1)
+    print "File hash matches remote file."
 
 
 def checkfile(ck_filepath):
     MD5 = CalcMD5(ck_filepath)
+
+    # why not put a coresponding text file containing the hash
+    # of ck_filepath in the same dir as DowdloadURL, say,
+    # https://o5obpsd7a.qnssl.com/bind.hash'? Then you can just
+    # download and read hash value online, which would make it
+    # easier to maintain if the bind.tar.gz should change.
+
     if MD5 != '173ce5e83e9ba31f8368367ee1ff7807':
-        print 'But it Md5 is error!'
+        print 'But Md5 mismatch found!'
         print 'error MD5:', MD5
         os.system('rm -rf /tmp/bind.tar.gz')
         # Downloadfile(DowdloadURL)
-        return 'error'
+        return False
+    return True
 
 
 if __name__ == '__main__':

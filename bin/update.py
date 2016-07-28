@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import hashlib
 import os
-import sys
+# import sys
 
 
 def CalcSha1(filepath):
@@ -21,32 +21,36 @@ def CalcMD5(filepath):
         return hash
 
 
-def update_rpz():
-    os.system('rm -rf rpz.zone.new')
-    os.system('wget -O rpz.zone.new "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone" --no-check-certificate')
+def update_rpz(oldfile):
+    check_exist(oldfile)
+    newfile = 'rpz.zone.new'
 
-    old = CalcMD5("/usr/local/named/var/rpz.zone")
-    new = CalcMD5("rpz.zone.new")
+    if os.path.isfile(newfile):
+        os.system('rm -rf ' + newfile)
+    url = "https://raw.githubusercontent.com/zyqf/DNS/master-rpz/named/rpz.zone"
+    os.system('wget -O ' + newfile + ' ' + url + '  --no-check-certificate')
+
+    old = CalcMD5(oldfile)
+    new = CalcMD5(newfile)
 
     if old == new:
-        print('nothing can update')
+        print('nothing to update')
 
     else:
         os.system('')
-        os.system('mv /usr/local/named/var/rpz.zone /usr/local/named/var/rpz.zone.bak')
-        os.system('mv rpz.zone.new /usr/local/named/var/rpz.zone')
+        os.system('mv ' + oldfile + ' ' + oldfile + '.bak')
+        os.system('mv ' + newfile + ' ' + oldfile)
         os.system('sudo rndc reload')
         print('update have done,thanks!')
 
 
 def check_exist(path):
-    if os.path.exists(path):
+    if os.path.isfile(path):
         print 'Find old rpz.zone'
     else:
-        os.system('touch /usr/local/named/var/rpz.zone')
+        os.system('touch ' + path)
 
 
 if __name__ == '__main__':
-
-    check_exist('/usr/local/named/var/rpz.zone')
-    update_rpz()
+    oldfile = '/usr/local/named/var/rpz.zone'
+    update_rpz(oldfile)
