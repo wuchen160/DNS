@@ -1,2 +1,2 @@
 0 2 * * * python /root/DNS/bin/update.py
-0 3 * * * service named restart 
+0 3 * * * service named restart

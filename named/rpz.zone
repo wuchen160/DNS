@@ -11,14 +11,14 @@ $TTL 1D
 
 
 ;telegram
-telegram.org 						IN A 149.154.167.99 
-www.telegram.org 					IN A 149.154.167.99 
-desktop.telegram.org 					IN A 149.154.167.99 
+telegram.org 						IN A 149.154.167.99
+www.telegram.org 					IN A 149.154.167.99
+desktop.telegram.org 					IN A 149.154.167.99
 core.telegram.org 					IN A 149.154.167.99
-updates.tdesktop.com 					IN A 149.154.167.80 
-web.telegram.org 					IN A 149.154.167.120 
+updates.tdesktop.com 					IN A 149.154.167.80
+web.telegram.org 					IN A 149.154.167.120
 flora.web.telegram.org 					IN A 149.154.171.22
-telegram.me 						IN A 149.154.167.118 
+telegram.me 						IN A 149.154.167.118
 www.telegram.m					 	IN A 149.154.167.118
 
 ;vimeo.com
@@ -102,7 +102,7 @@ google.cn						IN A		203.208.43.114
 fb.me							IN A 		173.252.81.7
 messages-facebook.com					IN A		173.252.81.7
 facebook.net						IN A		173.252.81.7
-facebook.com						IN A		173.252.81.7	
+facebook.com						IN A		173.252.81.7
 fbcdn.net						IN A		31.13.66.9
 scontent.xx.fbcdn.net					IN A		31.13.69.203
 video.xx.fbcdn.net					IN A		31.13.95.14
@@ -150,32 +150,32 @@ promoted.soundcloud.com					IN A		68.232.44.127
 visuals.soundcloud.com					IN A		68.232.44.127
 
 ;twitter
-twitter.com						IN A		104.244.42.1 
-www.twitter.com						IN A		104.244.42.1 
-api.twitter.com						IN A		104.244.42.2 
-mobile.twitter.com					IN A		104.244.42.6 
-support.twitter.com					IN A		104.244.42.7 
-upload.twitter.com					IN A		104.244.42.11 
-tweetdeck.twitter.com					IN A		104.244.42.132 
-tweetdeck.com						IN A		104.244.42.132 
-syndication.twitter.com					IN A		104.244.42.136 
-syndication-o.twitter.com				IN A		104.244.42.136 
-cdn.syndication.twimg.com				IN A		104.244.42.136 
-cdn.syndication.twitter.com				IN A		104.244.42.136 
-cdn.api.twitter.com					IN A		104.244.42.2 
-preview.cdn.twitter.com					IN A		104.244.42.1 
-t.co							IN A		104.244.42.197 
-twitpic.com						IN A		173.236.110.98 
-tinypic.com						IN A		209.17.68.209 
-twimg.com						IN A		104.244.43.199 
+twitter.com						IN A		104.244.42.1
+www.twitter.com						IN A		104.244.42.1
+api.twitter.com						IN A		104.244.42.2
+mobile.twitter.com					IN A		104.244.42.6
+support.twitter.com					IN A		104.244.42.7
+upload.twitter.com					IN A		104.244.42.11
+tweetdeck.twitter.com					IN A		104.244.42.132
+tweetdeck.com						IN A		104.244.42.132
+syndication.twitter.com					IN A		104.244.42.136
+syndication-o.twitter.com				IN A		104.244.42.136
+cdn.syndication.twimg.com				IN A		104.244.42.136
+cdn.syndication.twitter.com				IN A		104.244.42.136
+cdn.api.twitter.com					IN A		104.244.42.2
+preview.cdn.twitter.com					IN A		104.244.42.1
+t.co							IN A		104.244.42.197
+twitpic.com						IN A		173.236.110.98
+tinypic.com						IN A		209.17.68.209
+twimg.com						IN A		104.244.43.199
 
 video.twimg.com						IN A		104.244.43.199
-*.twimg.com						IN A		104.244.43.199 
-*.tinypic.com						IN A		209.17.68.209 
-*.twitpic.com						IN A		173.236.110.98 
-*.t.co							IN A		104.244.42.69 
-*.tweetdeck.com						IN A		104.244.42.132 
-*.twitter.com						IN A		104.244.42.3 
+*.twimg.com						IN A		104.244.43.199
+*.tinypic.com						IN A		209.17.68.209
+*.twitpic.com						IN A		173.236.110.98
+*.t.co							IN A		104.244.42.69
+*.tweetdeck.com						IN A		104.244.42.132
+*.twitter.com						IN A		104.244.42.3
 
 ;wikipedia
 wikipedia.org						IN A		198.35.26.96
@@ -235,7 +235,7 @@ app.box.com						IN A            74.112.184.70
 box.com                                                 IN A            74.112.184.90
 m.box.com 	                                        IN A            74.112.184.85
 support.box.com                                         IN A            104.218.203.34
-www.box.com                                             IN A            74.112.184.85	
+www.box.com                                             IN A            74.112.184.85
 www.box.net                                             IN A            74.112.184.80
 
 play.itunes.apple.com					IN A            118.215.176.66
@@ -248,7 +248,7 @@ init.itunes.apple.com					IN A		118.215.176.66
 itunes.apple.com					IN A		118.215.176.66
 
 search.itunes.apple.com					IN A		118.215.176.66
-		
+
 radio.itunes.apple.com					IN A		23.42.69.185
 radio-services.itunes.apple.com				IN A		23.42.69.185
 radio-activity.itunes.apple.com				IN A		23.42.69.185
@@ -314,7 +314,7 @@ steamcommunity-a.akamaihd.net				IN A		61.213.168.19
 origin-a.akamaihd.net					IN A		58.240.53.194
 
 ;mega
-mega.nz							IN A		154.53.224.166					
+mega.nz							IN A		154.53.224.166
 g.cdn1.mega.co.nz					IN A		117.18.237.188
 
 ;Amazon AWS
@@ -623,4 +623,3 @@ www.flickr.com						IN A		183.177.81.75
 *.google.vg						IN A		220.255.2.153
 *.google.vu						IN A		220.255.2.153
 *.google.ws						IN A		220.255.2.153
-

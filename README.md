@@ -1,20 +1,19 @@
 
-# NOTE  
+# NOTE
 * Your VPS must be in China
 * Only support Centos 6.7 64  or Ubuntu
 * You need remove old bind version RUN `yum remove bind*`
 
 ###If you want to install on docker,please read [Install with docker](https://github.com/zyqf/DNS/wiki/Install-with-docker)
 
-# Install 
+# Install (root required)
+## (rehl series only, redhat/centos/fedora which uses YUM)
 
 
 * `wget https://raw.githubusercontent.com/zyqf/DNS/master-rpz/qinstall.sh  --no-check-certificate && bash qinstall.sh `
 
 
-###  Midway will appear the following prompt , enter the public network ip
-
-* `Please enter your vps ip (*.*.*.*):`
+### No need to manually input IP address now :)
 
 #Update file rpz.zone
 
@@ -23,7 +22,7 @@ Centos系统将自动执行任务,Ubuntu暂未测试,如不自动执行请按照
 * `crontab -e`
 
 * 0 2 * * * python /root/DNS/bin/update.py
-* 0 3 * * * service named restart 
+* 0 3 * * * service named restart
 
 
 #thanks list
