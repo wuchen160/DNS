@@ -9,7 +9,7 @@ import re
 
 
 def getip():
-    url = "http://whois.pconline.com.cn/ipJson.jsp"
+    url = "http://ip.chinaz.com/getip.aspx"
     request = urllib.urlopen(url).read()
     myip = re.findall(r"\d{1,3}\.\d{1,3}\.\d{1,3}.\d{1,3}",request)[0]
     if myip:
