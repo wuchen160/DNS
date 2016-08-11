@@ -150,32 +150,32 @@ promoted.soundcloud.com					IN A		68.232.44.127
 visuals.soundcloud.com					IN A		68.232.44.127
 
 ;twitter
-twitter.com						IN A		104.244.42.1
-www.twitter.com						IN A		104.244.42.1
-api.twitter.com						IN A		104.244.42.2
-mobile.twitter.com					IN A		104.244.42.6
-support.twitter.com					IN A		104.244.42.7
-upload.twitter.com					IN A		104.244.42.11
-tweetdeck.twitter.com					IN A		104.244.42.132
-tweetdeck.com						IN A		104.244.42.132
-syndication.twitter.com					IN A		104.244.42.136
-syndication-o.twitter.com				IN A		104.244.42.136
-cdn.syndication.twimg.com				IN A		104.244.42.136
-cdn.syndication.twitter.com				IN A		104.244.42.136
-cdn.api.twitter.com					IN A		104.244.42.2
-preview.cdn.twitter.com					IN A		104.244.42.1
-t.co							IN A		104.244.42.197
+twitter.com						IN A		185.45.5.45
+www.twitter.com						IN A		185.45.5.45
+api.twitter.com						IN A		185.45.5.45
+mobile.twitter.com					IN A		185.45.5.45
+support.twitter.com					IN A		185.45.5.45
+upload.twitter.com					IN A		185.45.5.45
+tweetdeck.twitter.com					IN A		185.45.5.45
+tweetdeck.com						IN A		185.45.5.45
+syndication.twitter.com					IN A		185.45.5.45
+syndication-o.twitter.com				IN A		185.45.5.45
+cdn.syndication.twimg.com				IN A		185.45.5.45
+cdn.syndication.twitter.com				IN A		185.45.5.45
+cdn.api.twitter.com					IN A		185.45.5.45
+preview.cdn.twitter.com					IN A		185.45.5.45
+t.co							IN A		185.45.5.45
 twitpic.com						IN A		173.236.110.98
 tinypic.com						IN A		209.17.68.209
-twimg.com						IN A		104.244.43.199
+twimg.com						IN A		199.96.57.3
 
-video.twimg.com						IN A		104.244.43.199
-*.twimg.com						IN A		104.244.43.199
+video.twimg.com						IN A		199.96.57.3
+*.twimg.com						IN A		199.96.57.3
 *.tinypic.com						IN A		209.17.68.209
 *.twitpic.com						IN A		173.236.110.98
-*.t.co							IN A		104.244.42.69
-*.tweetdeck.com						IN A		104.244.42.132
-*.twitter.com						IN A		104.244.42.3
+*.t.co							IN A		185.45.5.45
+*.tweetdeck.com						IN A		185.45.5.45
+*.twitter.com						IN A		185.45.5.45
 
 ;wikipedia
 wikipedia.org						IN A		198.35.26.96
@@ -623,3 +623,15 @@ www.flickr.com						IN A		183.177.81.75
 *.google.vg						IN A		220.255.2.153
 *.google.vu						IN A		220.255.2.153
 *.google.ws						IN A		220.255.2.153
+
+; Disqus Start
+
+disqus.com    IN A    23.235.33.134
+www.disqus.com    IN A    23.235.33.134
+blog.disqus.com    IN A    23.235.33.134
+help.disqus.com    IN A    50.18.249.249
+content.disqus.com    IN A    23.235.33.134
+referrer.disqus.com    IN A    23.235.37.134
+apkpure.disqus.com    IN A    23.235.37.134
+*.disqus.com	IN A	23.235.33.134
+; Disqus End
