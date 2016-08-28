@@ -11,15 +11,15 @@ $TTL 1D
 
 
 ;telegram
-telegram.org 						IN A 149.154.167.99
-www.telegram.org 					IN A 149.154.167.99
-desktop.telegram.org 					IN A 149.154.167.99
-core.telegram.org 					IN A 149.154.167.99
-updates.tdesktop.com 					IN A 149.154.167.80
-web.telegram.org 					IN A 149.154.167.120
-flora.web.telegram.org 					IN A 149.154.171.22
-telegram.me 						IN A 149.154.167.118
-www.telegram.m					 	IN A 149.154.167.118
+telegram.org 						IN A 		149.154.167.99
+www.telegram.org 					IN A 		149.154.167.99
+desktop.telegram.org 					IN A 		149.154.167.99
+core.telegram.org 					IN A 		149.154.167.99
+updates.tdesktop.com 					IN A 		149.154.167.80
+web.telegram.org 					IN A 		149.154.167.120
+flora.web.telegram.org 					IN A 		149.154.171.22
+telegram.me 						IN A 		149.154.167.118
+www.telegram.m					 	IN A 		149.154.167.118
 
 ;vimeo.com
 vimeo.com						IN A		104.156.85.217
@@ -27,9 +27,9 @@ player.vimeo.com					IN A		104.156.81.217
 
 ;tumblr
 
-tumblr.com 						IN A 		182.239.95.136
-*.tumblr.com 						IN A 		182.239.95.136
-*.assets.tumblr.com 					IN A 		182.239.95.136
+tumblr.com 						IN A 		218.254.1.13
+*.tumblr.com 						IN A 		218.254.1.13
+*.assets.tumblr.com 					IN A 		218.254.1.13
 ;GOOGLE
 securetoken.googleapis.com 				IN A 		220.255.2.153
 firebasestorage.googleapis.com 				IN A 		220.255.2.153
@@ -59,14 +59,14 @@ ingress.com                                             IN A            72.14.24
 *.googleadservices.com					IN A		203.208.43.77
 
 
-*.gvt0.com						IN A		182.239.95.136
-*.gvt1.com						IN A		182.239.95.136
-*.gvt2.com						IN A		182.239.95.136
-*.gvt3.com						IN A		182.239.95.136
+*.gvt0.com						IN A		218.254.1.13
+*.gvt1.com						IN A		218.254.1.13
+*.gvt2.com						IN A		218.254.1.13
+*.gvt3.com						IN A		218.254.1.13
 
 ;youtube
-youtu.be						IN A		182.239.95.136
-youtube.com						IN A		182.239.95.136
+youtu.be						IN A		218.254.1.13
+youtube.com						IN A		218.254.1.13
 *.ytimg.com						IN A		182.239.127.137
 *.youtu.be						IN A		182.239.127.137
 *.youtube.com						IN A		182.239.127.137
@@ -75,7 +75,7 @@ youtube.com						IN A		182.239.95.136
 
 ;gstaticStart
 fonts.gstatic.com					IN A		203.208.43.88
-*.ggpht.com						IN A		182.239.95.136
+*.ggpht.com						IN A		218.254.1.13
 *.gstatic.com						IN A		220.255.2.153
 
 ;GoogleapisStart
@@ -626,12 +626,12 @@ www.flickr.com						IN A		183.177.81.75
 
 ; Disqus Start
 
-disqus.com    IN A    23.235.33.134
-www.disqus.com    IN A    23.235.33.134
-blog.disqus.com    IN A    23.235.33.134
-help.disqus.com    IN A    50.18.249.249
-content.disqus.com    IN A    23.235.33.134
-referrer.disqus.com    IN A    23.235.37.134
-apkpure.disqus.com    IN A    23.235.37.134
-*.disqus.com	IN A	23.235.33.134
+disqus.com    						IN A    	23.235.33.134
+www.disqus.com						IN A    	23.235.33.134
+blog.disqus.com						IN A    	23.235.33.134
+help.disqus.com    					IN A		50.18.249.249
+content.disqus.com					IN A    	23.235.33.134
+referrer.disqus.com    					IN A    	23.235.37.134
+apkpure.disqus.com    					IN A    	23.235.37.134
+*.disqus.com						IN A		23.235.33.134
 ; Disqus End
