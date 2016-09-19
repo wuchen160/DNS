@@ -25,12 +25,13 @@ www.telegram.m					 	IN A 		149.154.167.118
 vimeo.com						IN A		104.156.85.217
 player.vimeo.com					IN A		104.156.81.217
 
-;tumblr
 
+;tumblr
 tumblr.com 						IN A 		218.254.1.13
 *.tumblr.com 						IN A 		218.254.1.13
 *.assets.tumblr.com 					IN A 		218.254.1.13
 ;GOOGLE
+www.chromium.org					IN A		216.239.32.27
 securetoken.googleapis.com 				IN A 		220.255.2.153
 firebasestorage.googleapis.com 				IN A 		220.255.2.153
 code.getmdl.io 						IN A 		64.233.188.121
