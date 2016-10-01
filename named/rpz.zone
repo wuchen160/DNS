@@ -31,7 +31,7 @@ tumblr.com 						IN A 		218.254.1.13
 *.tumblr.com 						IN A 		218.254.1.13
 *.assets.tumblr.com 					IN A 		218.254.1.13
 ;GOOGLE
-www.chromium.org					IN A		216.239.32.27
+www.chromium.org					IN A		220.255.2.153
 securetoken.googleapis.com 				IN A 		220.255.2.153
 firebasestorage.googleapis.com 				IN A 		220.255.2.153
 code.getmdl.io 						IN A 		64.233.188.121
@@ -100,15 +100,15 @@ google.cn						IN A		203.208.43.114
 *.google.cn						IN A		203.208.40.146
 
 ;facebook
-fb.me							IN A 		173.252.81.7
-messages-facebook.com					IN A		173.252.81.7
-facebook.net						IN A		173.252.81.7
-facebook.com						IN A		173.252.81.7
+fb.me							IN A 		ten
+messages-facebook.com					IN A		50.63.202.88
+facebook.net						IN A		31.13.95.17
+facebook.com						IN A		31.13.95.17
 fbcdn.net						IN A		31.13.66.9
 scontent.xx.fbcdn.net					IN A		31.13.69.203
 video.xx.fbcdn.net					IN A		31.13.95.14
 
-*.messages-facebook.com					IN A		218.254.1.13
+*.messages-facebook.com					IN A		50.63.202.88
 *.facebook.net						IN A		104.78.23.174
 *.facebook.com						IN A		218.254.1.13
 *.fbcdn.net 						IN A		31.13.95.14
@@ -143,29 +143,29 @@ api-v2.soundcloud.com					IN A		68.232.44.127
 api-mobile.soundcloud.com				IN A		68.232.44.127
 api.soundcloud.com					IN A		68.232.44.127
 ec-media.soundcloud.com					IN A		68.232.45.67
-ec-rtmp-media.soundcloud.com				IN A		68.232.46.220
-eventgateway.soundcloud.com				IN A		54.76.196.137
-eventlogger.soundcloud.com				IN A		54.76.196.137
+ec-rtmp-media.soundcloud.com				IN A		93.184.222.220
+eventgateway.soundcloud.com				IN A		54.154.170.162
+eventlogger.soundcloud.com				IN A		52.18.172.128
 m.soundcloud.com					IN A		72.21.91.127
 promoted.soundcloud.com					IN A		68.232.44.127
 visuals.soundcloud.com					IN A		68.232.44.127
 
 ;twitter
-twitter.com						IN A		185.45.5.45
-www.twitter.com						IN A		185.45.5.45
-api.twitter.com						IN A		185.45.5.45
-mobile.twitter.com					IN A		185.45.5.45
-support.twitter.com					IN A		185.45.5.45
-upload.twitter.com					IN A		185.45.5.45
-tweetdeck.twitter.com					IN A		185.45.5.45
-tweetdeck.com						IN A		185.45.5.45
-syndication.twitter.com					IN A		185.45.5.45
-syndication-o.twitter.com				IN A		185.45.5.45
-cdn.syndication.twimg.com				IN A		185.45.5.45
-cdn.syndication.twitter.com				IN A		185.45.5.45
-cdn.api.twitter.com					IN A		185.45.5.45
-preview.cdn.twitter.com					IN A		185.45.5.45
-t.co							IN A		185.45.5.45
+twitter.com						IN A		104.244.42.3
+www.twitter.com						IN A		104.244.42.3
+api.twitter.com						IN A		104.244.42.3
+mobile.twitter.com					IN A		104.244.42.3
+support.twitter.com					IN A		104.244.42.3
+upload.twitter.com					IN A		104.244.42.3
+tweetdeck.twitter.com					IN A		104.244.42.3
+tweetdeck.com						IN A		104.244.42.3
+syndication.twitter.com					IN A		104.244.42.3
+syndication-o.twitter.com				IN A		104.244.42.3
+cdn.syndication.twimg.com				IN A		104.244.42.3
+cdn.syndication.twitter.com				IN A		104.244.42.3
+cdn.api.twitter.com					IN A		104.244.42.3
+preview.cdn.twitter.com					IN A		104.244.42.3
+t.co							IN A		104.244.42.3
 twitpic.com						IN A		173.236.110.98
 tinypic.com						IN A		209.17.68.209
 twimg.com						IN A		199.96.57.3
@@ -174,9 +174,9 @@ video.twimg.com						IN A		199.96.57.3
 *.twimg.com						IN A		199.96.57.3
 *.tinypic.com						IN A		209.17.68.209
 *.twitpic.com						IN A		173.236.110.98
-*.t.co							IN A		185.45.5.45
-*.tweetdeck.com						IN A		185.45.5.45
-*.twitter.com						IN A		185.45.5.45
+*.t.co							IN A		104.244.42.3
+*.tweetdeck.com						IN A		104.244.42.3
+*.twitter.com						IN A		104.244.42.3
 
 ;wikipedia
 wikipedia.org						IN A		198.35.26.96
@@ -221,15 +221,6 @@ wac.8244.edgecastcdn.net 				IN A 		68.232.44.229
 www.xda-developers.com 					IN A 		207.244.73.44
 xda-developers.com 					IN A 		207.244.73.44
 
-;github
-gist.github.com						IN A		192.30.252.141
-github.com						IN A		192.30.253.112
-www.github.com 						IN A		192.30.253.112
-nodeload.github.com					IN A		192.30.253.120
-raw.github.com						IN A		151.101.40.133
-documentcloud.github.com				IN A		151.101.40.133
-developer.github.com					IN A		151.101.24.133
-api.github.com						IN A		192.30.253.116
 
 ;Box.com
 app.box.com						IN A            74.112.184.70
@@ -337,13 +328,13 @@ s3-sa-east-1.amazonaws.com 	                        IN A 		54.231.253.78
 s3-us-west-1.amazonaws.com 	                        IN A 		54.231.237.85
 s3-us-west-2.amazonaws.com 	                        IN A 		54.231.160.48
 sa-east-1.console.aws.amazon.com 	                IN A 		177.72.244.68
-us-west-1.console.aws.amazon.com 	                IN A 		204.246.162.198
+us-west-1.console.aws.amazon.com 	                IN A 		176.32.118.142
 us-west-2.console.aws.amazon.com 	                IN A 		54.240.250.61
 github-cloud.s3.amazonaws.com 	                        IN A 		54.231.34.41
 github-com.s3.amazonaws.com 	                        IN A 		54.231.48.40
 
 ;Archive 
-archive.org                                             IN A            207.241.224.2
+archive.org                                             IN A            207.241.224.22
 web.archive.org                                         IN A            207.241.226.190
 
 ;DuckDuckGo
@@ -382,7 +373,7 @@ farm1.staticflickr.com					IN A		68.142.214.43
 farm2.staticflickr.com					IN A		69.147.90.159
 farm3.staticflickr.com					IN A		77.238.160.184
 farm4.staticflickr.com					IN A		76.13.18.77
-farm5.staticflickr.com					IN A		76.13.18.79
+farm5.staticflickr.com					IN A		106.10.137.23
 farm6.staticflickr.com					IN A		98.136.171.208
 farm7.staticflickr.com					IN A		98.138.250.88
 flickr.com						IN A		69.147.76.173
